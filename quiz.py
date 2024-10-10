@@ -4,18 +4,17 @@ from questions import questions  # Importer les questions depuis le fichier ques
 # Fonction pour poser les questions et calculer le score
 def poser_questions():
     score = 0
-    start_time = time.time()
     for i, q in enumerate(questions):
         print(f"Question {i + 1}: {q['question']}")
         for choice in q['choices']:
             print(choice)
+        start_time = time.time()
         reponse = input("Votre réponse: ")
+        elapsed_time = time.time() - start_time
         if reponse == q['answer']:
-            score += 1
-            elapsed_time = time.time() - start_time
-            if elapsed_time < 10:  # Bonus pour réponse rapide
-                score += 0.5
-        start_time = time.time()  # Reset timer for next question
+            points = max(0, 10 - int(elapsed_time))  # Calcul des points en fonction du temps restant
+            score += points
+        print(f"Temps écoulé: {elapsed_time:.2f} secondes, Points gagnés: {points}")
     return score
 
 # Fonction pour sauvegarder les scores
