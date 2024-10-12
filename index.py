@@ -1,7 +1,6 @@
 import pygame
 import json
 import random
-import time
 
 # Initialisation de Pygame
 pygame.init()
@@ -35,6 +34,24 @@ last_click_time = 0  # Variable pour stocker le temps du dernier clic
 score_page = 0  # Page actuelle des scores
 scores_per_page = 8  # Nombre de scores à afficher par page
 
+def decoder_chaine(chaine):
+    return chaine.encode('latin1').decode('unicode_escape')
+
+def corriger_scores():
+    with open('scores.json', 'r', encoding='utf-8') as f:
+        scores = json.load(f)
+    
+    for score in scores:
+        for key in score:
+            if isinstance(score[key], str):
+                score[key] = decoder_chaine(score[key])
+    
+    with open('scores.json', 'w', encoding='utf-8') as f:
+        json.dump(scores, f, ensure_ascii=False, indent=4)
+
+# Appeler la fonction pour corriger les scores
+corriger_scores()
+
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page
     score = 0
@@ -48,13 +65,13 @@ def reinitialiser_jeu():
     page = "pseudo"
 
 # Charger les questions depuis le fichier JSON
-with open('questions.json', 'r') as f:
+with open('questions.json', 'r', encoding='utf-8') as f:
     all_questions = json.load(f)
 
 # Charger les scores depuis le fichier JSON
 def charger_scores():
     try:
-        with open('scores.json', 'r') as f:
+        with open('scores.json', 'r', encoding='utf-8') as f:
             data = f.read().strip()
             if data:
                 scores = json.loads(data)
@@ -79,8 +96,8 @@ def sauvegarder_scores():
     # Trier les scores par ordre décroissant en fonction des points
     scores.sort(key=lambda x: x['score'], reverse=True)
     # Sauvegarder les scores triés dans le fichier JSON
-    with open('scores.json', 'w') as f:
-        json.dump(scores, f, indent=4)
+    with open('scores.json', 'w', encoding='utf-8') as f:
+        json.dump(scores, f, indent=4, ensure_ascii=False)
 
 def afficher_texte(texte, x, y, couleur, taille=36):
     font = pygame.font.Font(None, taille)
@@ -98,8 +115,8 @@ def afficher_bouton(texte, x, y, largeur, hauteur, couleur, action=None):
         if click[0] == 1 and action is not None:
             current_time = pygame.time.get_ticks()
             if current_time - last_click_time > 500: 
-                last_click_time = current_time
                 action()
+                last_click_time = current_time
 
 # Fonction pour afficher les boutons de réponse
 def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, hover_couleur, action=None):
@@ -110,9 +127,9 @@ def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, hover_couleu
         pygame.draw.rect(screen, hover_couleur, (x, y, largeur, hauteur))
         if click[0] == 1 and action is not None:
             current_time = pygame.time.get_ticks()
-            if current_time - last_click_time > 500:  # Vérifier si 0.5 seconde s'est écoulée
-                last_click_time = current_time
+            if current_time - last_click_time > 500:                
                 action()
+                last_click_time = current_time
     else:
         pygame.draw.rect(screen, couleur, (x, y, largeur, hauteur))
     afficher_texte(texte, x + (largeur // 2 - font.size(texte)[0] // 2), y + (hauteur // 2 - font.size(texte)[1] // 2), WHITE)
@@ -225,11 +242,11 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         elif event.type == pygame.KEYDOWN and page == "pseudo":
-            if event.key == pygame.K_RETURN:
-                page = "difficulte"
-            elif event.key == pygame.K_BACKSPACE:
+            if event.key == pygame.K_BACKSPACE:
                 pseudo = pseudo[:-1]
-            elif len(pseudo) < 7:
+            elif event.key == pygame.K_RETURN:
+                page = "difficulte"
+            else:
                 pseudo += event.unicode
 
     if page == "pseudo":
@@ -252,25 +269,19 @@ while running:
 
         # Vérifier que la liste des questions n'est pas vide
         if questions:
-            # Afficher la question
             question = questions[question_actuelle]
             afficher_texte(question["question"], SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, BLACK)
-
-            # Afficher les réponses
             for i, reponse in enumerate(question["reponses"]):
-                afficher_bouton_reponse(str(i+1) + ". " + reponse, SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 + i*50, 400, 50, BLUE, HOVER_COLOR, lambda i=i: verifier_reponse(i))
-
-            # Afficher le bouton pour aller à la page de score
-            afficher_bouton("Voir Scores", SCREEN_WIDTH // 2 - 100, 50, 200, 50, BLUE, afficher_page_score)
+                afficher_bouton_reponse(reponse, SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50 + i * 60, 200, 50, BLUE, HOVER_COLOR, lambda i=i: verifier_reponse(i))
         else:
-            afficher_texte("Aucune question disponible.", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2, RED)
+            afficher_texte("Aucune question disponible.", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, BLACK)
 
     elif page == "score":
         afficher_page_score()
 
     # Mettre à jour l'affichage
     pygame.display.flip()
-
+    
     # Contrôler la vitesse de la boucle
     clock.tick(60)
 
