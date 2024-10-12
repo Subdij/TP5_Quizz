@@ -1,0 +1,65 @@
+[
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle est la capitale de la France ?",
+        "reponses": ["Paris", "Londres", "Berlin", "Madrid"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel est le plus grand désert du monde ?",
+        "reponses": ["Sahara", "Gobi", "Kalahari", "Arctique"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel est le plus long fleuve du monde ?",
+        "reponses": ["Nil", "Amazon", "Yangtsé", "Mississippi"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la plus grande île du monde ?",
+        "reponses": ["Groenland", "Madagascar", "Borneo", "Nouvelle-Guinée"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le plus haut sommet du monde ?",
+        "reponses": ["Everest", "K2", "Kangchenjunga", "Lhotse"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le plus grand océan du monde ?",
+        "reponses": ["Pacifique", "Atlantique", "Indien", "Arctique"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale de l'Australie ?",
+        "reponses": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le pays le plus peuplé d'Afrique ?",
+        "reponses": ["Nigeria", "Ethiopie", "Egypte", "Afrique du Sud"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus grand lac d'eau douce du monde ?",
+        "reponses": ["Lac Supérieur", "Lac Victoria", "Lac Tanganyika", "Lac Baïkal"],
+        "bonne_reponse": 0
+    }
+]
