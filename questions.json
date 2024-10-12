@@ -22,7 +22,7 @@
     },
     {
         "categorie": "Géographie",
-        "difficulte": "Moyen",
+        "difficulte": "Moyen", 
         "question": "Quelle est la plus grande île du monde ?",
         "reponses": ["Groenland", "Madagascar", "Borneo", "Nouvelle-Guinée"],
         "bonne_reponse": 0

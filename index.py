@@ -119,7 +119,7 @@ def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, hover_couleu
 
 # Fonction pour afficher la page principale
 def afficher_page_principale():
-    global page
+    global page 
     page = "principale"
 
 # Fonction pour afficher la page de score
