@@ -200,6 +200,7 @@ def choisir_categorie(cat):
     global categorie, page, questions
     categorie = cat
     questions = [q for q in all_questions if q["categorie"] == categorie and q["difficulte"] == difficulte]
+    random.shuffle(questions)  # Mélanger les questions
     page = "principale"
 
 # Fonction pour vérifier la réponse
