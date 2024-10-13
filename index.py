@@ -43,7 +43,8 @@ def reinitialiser_jeu():
     pseudo = ""
     difficulte = ""
     categorie = ""
-    questions = []
+    questions = [q for q in all_questions if q["categorie"] == categorie and q["difficulte"] == difficulte]
+    random.shuffle(questions)  # Mélanger les questions
     start_ticks = pygame.time.get_ticks()
     page = "pseudo"
 
@@ -201,6 +202,7 @@ def choisir_categorie(cat):
     global categorie, page, questions
     categorie = cat
     questions = [q for q in all_questions if q["categorie"] == categorie and q["difficulte"] == difficulte]
+    random.shuffle(questions)  # Mélanger les questions
     page = "principale"
 
 # Fonction pour vérifier la réponse
@@ -219,6 +221,10 @@ clock = pygame.time.Clock()
 start_ticks = pygame.time.get_ticks()
 page = "pseudo"
 scores = charger_scores()
+
+# Mélanger les questions au lancement de l'application
+questions = [q for q in all_questions if q["categorie"] == categorie and q["difficulte"] == difficulte]
+random.shuffle(questions)
 
 while running:
     for event in pygame.event.get():
