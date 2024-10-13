@@ -103,7 +103,7 @@ def afficher_bouton(texte, x, y, largeur, hauteur, couleur, action=None):
     if x + largeur > mouse[0] > x and y + hauteur > mouse[1] > y:
         if click[0] == 1 and action is not None:
             current_time = pygame.time.get_ticks()
-            if current_time - last_click_time > 500: 
+            if current_time - last_click_time > 200: 
                 last_click_time = current_time
                 action()
 
@@ -151,7 +151,7 @@ def afficher_page_score():
     for i, score_entry in enumerate(scores[start_index:end_index], start=start_index + 1):
         afficher_texte(f"{i}. {score_entry['pseudo']}", 80, y_offset, WHITE)
         afficher_texte(f"{score_entry['categorie']}", 280, y_offset, WHITE)
-        afficher_texte(f"{score_entry['difficulte']}", 480, y_offset, WHITE)
+        afficher_texte(f"{score_entry['difficulte']}", 500, y_offset, WHITE)
         afficher_texte(f"{score_entry['score']}", 680, y_offset, WHITE)
         y_offset += 40
     
