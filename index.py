@@ -34,9 +34,11 @@ questions = []
 last_click_time = 0  # Variable pour stocker le temps du dernier clic
 score_page = 0  # Page actuelle des scores
 scores_per_page = 7  # Nombre de scores à afficher par page
+multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
+temps_question = 10  # Temps restant pour chaque question
 
 # Charger l'image de fond
-background_image = pygame.image.load('images\score.jpg')
+background_image = pygame.image.load('images/score.jpg')
 background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def reinitialiser_jeu():
@@ -190,8 +192,14 @@ def afficher_page_difficulte():
 
 # Fonction pour choisir la difficulté
 def choisir_difficulte(diff):
-    global difficulte, page
+    global difficulte, page, multiplicateur
     difficulte = diff
+    if diff == "Facile":
+        multiplicateur = 1
+    elif diff == "Moyen":
+        multiplicateur = 2
+    elif diff == "Difficile":
+        multiplicateur = 4
     page = "categorie"
 
 # Fonction pour afficher la page de catégorie
@@ -206,18 +214,22 @@ def afficher_page_categorie():
 
 # Fonction pour choisir la catégorie
 def choisir_categorie(cat):
-    global categorie, page, questions
+    global categorie, page, questions, start_ticks
     categorie = cat
     questions = [q for q in all_questions if q["categorie"] == categorie and q["difficulte"] == difficulte]
     random.shuffle(questions)  # Mélanger les questions
+    start_ticks = pygame.time.get_ticks()  # Réinitialiser le timer au début des questions
     page = "principale"
 
 # Fonction pour vérifier la réponse
 def verifier_reponse(index):
-    global score, question_actuelle, page
+    global score, question_actuelle, page, temps_question, start_ticks
     if questions[question_actuelle]["bonne_reponse"] == index:
-        score += 1
+        score += 1 * multiplicateur
+        score += temps_question * multiplicateur  # Ajouter le temps restant au score avec le multiplicateur
     question_actuelle += 1
+    temps_question = 10  # Réinitialiser le temps pour la prochaine question
+    start_ticks = pygame.time.get_ticks()  # Réinitialiser le timer pour la prochaine question
     if question_actuelle >= len(questions):
         sauvegarder_scores()
         page = "score"
@@ -258,10 +270,10 @@ while running:
         # Afficher le score
         afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, BLACK)
 
-        # Calculer le temps restant
+        # Calculer le temps restant pour la question
         seconds = (pygame.time.get_ticks() - start_ticks) // 1000
-        temps_restant = max(30 - seconds, 0)
-        afficher_texte("Temps restant: " + str(temps_restant), 20, 20, RED)
+        temps_question = max(10 - seconds, 0)
+        afficher_texte("Temps restant: " + str(temps_question), 20, 20, RED)
 
         # Vérifier que la liste des questions n'est pas vide
         if questions:
@@ -277,6 +289,15 @@ while running:
             afficher_bouton("Voir Scores", SCREEN_WIDTH // 2 - 100, 50, 200, 50, BLUE, afficher_page_score)
         else:
             afficher_texte("Aucune question disponible.", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2, RED)
+
+        # Vérifier si le temps pour la question est écoulé
+        if temps_question <= 0:
+            question_actuelle += 1
+            temps_question = 10  # Réinitialiser le temps pour la prochaine question
+            start_ticks = pygame.time.get_ticks()  # Réinitialiser le timer pour la prochaine question
+            if question_actuelle >= len(questions):
+                sauvegarder_scores()
+                page = "score"
 
     elif page == "score":
         afficher_page_score()
