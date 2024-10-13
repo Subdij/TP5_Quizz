@@ -33,7 +33,11 @@ categorie = ""
 questions = []
 last_click_time = 0  # Variable pour stocker le temps du dernier clic
 score_page = 0  # Page actuelle des scores
-scores_per_page = 8  # Nombre de scores à afficher par page
+scores_per_page = 7  # Nombre de scores à afficher par page
+
+# Charger l'image de fond
+background_image = pygame.image.load('images\score.jpg')
+background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page
@@ -128,24 +132,27 @@ def afficher_page_principale():
 def afficher_page_score():
     global page, score_page
     page = "score"
-    screen.fill(WHITE)
-    afficher_texte("Scores", SCREEN_WIDTH // 2 - 50, 40, BLACK, taille=48)
+    
+    # Afficher l'image de fond
+    screen.blit(background_image, (0, 0))
+    
+    afficher_texte("Scores", SCREEN_WIDTH // 2 - 50, 70, WHITE, taille=48)
     
     # Afficher les en-têtes des colonnes
-    afficher_texte("Pseudo", 100, 100, BLACK)
-    afficher_texte("Catégorie", 300, 100, BLACK)
-    afficher_texte("Difficulté", 500, 100, BLACK)
-    afficher_texte("Score", 700, 100, BLACK)
+    afficher_texte("Pseudo", 80, 140, WHITE)
+    afficher_texte("Catégorie", 280, 140, WHITE)
+    afficher_texte("Difficulté", 480, 140, WHITE)
+    afficher_texte("Score", 650, 140, WHITE)
     
     start_index = score_page * scores_per_page
     end_index = start_index + scores_per_page
-    y_offset = 150
+    y_offset = 200
     
     for i, score_entry in enumerate(scores[start_index:end_index], start=start_index + 1):
-        afficher_texte(f"{i}. {score_entry['pseudo']}", 100, y_offset, BLACK)
-        afficher_texte(f"{score_entry['categorie']}", 300, y_offset, BLACK)
-        afficher_texte(f"{score_entry['difficulte']}", 500, y_offset, BLACK)
-        afficher_texte(f"{score_entry['score']}", 700, y_offset, BLACK)
+        afficher_texte(f"{i}. {score_entry['pseudo']}", 80, y_offset, WHITE)
+        afficher_texte(f"{score_entry['categorie']}", 280, y_offset, WHITE)
+        afficher_texte(f"{score_entry['difficulte']}", 480, y_offset, WHITE)
+        afficher_texte(f"{score_entry['score']}", 680, y_offset, WHITE)
         y_offset += 40
     
     if score_page > 0:
