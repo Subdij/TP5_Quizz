@@ -26,7 +26,7 @@ font = pygame.font.Font(None, 36)
 quiz_termine = False
 score = 0
 temps_restant = 30
-temps_global = 60  # Temps global de 1 minute
+temps_global = 1000  # Temps global de 1 minute
 question_actuelle = 0
 scores = []
 pseudo = ""
@@ -40,7 +40,6 @@ score_page = 0  # Page actuelle des scores
 scores_per_page = 7  # Nombre de scores à afficher par page
 multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
-streak = 0  # le nombre de réponses correctes consécutives
 
 # Charger l'image de fond
 background_image = pygame.image.load('images/score.jpg')
@@ -239,15 +238,10 @@ def commencer_quiz():
 
 # Fonction pour vérifier la réponse
 def verifier_reponse(index):
-    global score, question_actuelle, page, temps_question, start_ticks, streak, temps_global
+    global score, question_actuelle, page, temps_question, start_ticks, temps_global
     if questions[question_actuelle]["bonne_reponse"] == index:
         score += 1 * multiplicateur
         score += temps_question * multiplicateur  # Ajouter le temps restant au score avec le multiplicateur
-        streak += 1  # le streak
-        if streak % 3 == 0:  # Ajouter 10 secondes au timer global toutes les 3 bonnes réponses
-            temps_global += 10
-    else:
-        streak = 0  # Réinitialiser le streak en cas de mauvaise réponse
     question_actuelle += 1
     temps_question = 10  # Réinitialiser le temps pour la prochaine question
     start_ticks = pygame.time.get_ticks()  # Réinitialiser le timer pour la prochaine question
@@ -300,9 +294,6 @@ while running:
         seconds_global = (pygame.time.get_ticks() - start_ticks_global) // 1000
         temps_global = max(60 - seconds_global, 0)
         afficher_texte("Temps global: " + str(temps_global), 20, 50, RED)
-
-        # Afficher le streak
-        afficher_texte("Streak: " + str(streak), 20, 80, BLUE)
 
         # Vérifier que la liste des questions n'est pas vide
         if questions:
