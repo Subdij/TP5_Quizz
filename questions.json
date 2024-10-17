@@ -264,5 +264,194 @@
         "question": "Qui était le principal architecte de la réunification de l'Allemagne en 1871 ?",
         "reponses": ["Otto von Bismarck", "Guillaume II", "Adolf Hitler"],
         "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel est le nom du traité qui a mis fin à la guerre entre les États-Unis et le Royaume-Uni en 1814 ?",
+        "reponses": ["Traité de Gand", "Traité de Paris", "Traité de Versailles"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel empire a été vaincu à la bataille de Manzikert en 1071 ?",
+        "reponses": ["L'Empire byzantin", "L'Empire perse", "L'Empire ottoman"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quelle était la capitale de l'empire hittite, connu pour ses archives en écriture cunéiforme ?",
+        "reponses": ["Ninive", "Hattusa", "Babylone"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Qui a régné sur l'Empire moghol à son apogée au XVIIe siècle et commandé la construction du Taj Mahal ?",
+        "reponses": ["Akbar", "Shah Jahan", "Aurangzeb"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel explorateur européen a été le premier à contourner le cap de Bonne-Espérance ?",
+        "reponses": ["Ferdinand Magellan", "Bartolomeu Dias", "Vasco de Gama"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel chef militaire carthaginois a traversé les Alpes pour attaquer Rome pendant la Deuxième Guerre punique ?",
+        "reponses": ["Hamilcar Barca", "Hannibal Barca", "Scipion l'Africain"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel empire a contrôlé la majorité du Moyen-Orient avant d’être renversé par Alexandre le Grand ?",
+        "reponses": ["L'Empire perse achéménide", "L'Empire assyrien", "L'Empire parthe"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Qui a peint la célèbre œuvre 'La Joconde' ?",
+        "reponses": ["Pablo Picasso", "Léonard de Vinci", "Vincent van Gogh"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Dans quel musée se trouve 'La Vénus de Milo' ?",
+        "reponses": ["Le musée du Louvre", "Le musée d'Orsay", "Le British Museum"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel mouvement artistique a été fondé par Claude Monet ?",
+        "reponses": ["Le cubisme", "L'impressionnisme", "Le surréalisme"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quelle œuvre a été peinte par Michel-Ange sur le plafond de la chapelle Sixtine ?",
+        "reponses": ["La Création d'Adam", "Guernica", "La Nuit étoilée"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel sculpteur est l'auteur du 'David', célèbre statue en marbre ?",
+        "reponses": ["Auguste Rodin", "Michel-Ange", "Donatello"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel peintre est connu pour ses tableaux de nénuphars ?",
+        "reponses": ["Édouard Manet", "Claude Monet", "Paul Cézanne"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quelle technique artistique utilise des petits points de couleur pour créer une image ?",
+        "reponses": ["Le pointillisme", "Le cubisme", "Le fauvisme"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel artiste espagnol est célèbre pour son tableau 'Guernica' ?",
+        "reponses": ["Salvador Dalí", "Joan Miró", "Pablo Picasso"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel peintre néerlandais a peint 'La Jeune Fille à la Perle' ?",
+        "reponses": ["Johannes Vermeer", "Rembrandt", "Hieronymus Bosch"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Dans quelle ville se trouve le musée Guggenheim, célèbre pour son architecture moderne ?",
+        "reponses": ["Paris", "New York", "Berlin"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Qui est l'auteur du roman 'Les Misérables' ?",
+        "reponses": ["Gustave Flaubert", "Victor Hugo", "Honoré de Balzac"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel célèbre écrivain anglais est connu pour ses pièces de théâtre comme 'Hamlet' et 'Roméo et Juliette' ?",
+        "reponses": ["Charles Dickens", "William Shakespeare", "George Orwell"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel roman de Miguel de Cervantès met en scène le chevalier Don Quichotte ?",
+        "reponses": ["Don Quichotte de la Mancha", "Le Comte de Monte-Cristo", "L'Ingénieux Hidalgo"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Qui a écrit 'À la recherche du temps perdu' ?",
+        "reponses": ["Marcel Proust", "Albert Camus", "Émile Zola"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quelle célèbre héroïne de roman est issue du livre 'Orgueil et Préjugés' ?",
+        "reponses": ["Anna Karenine", "Jane Eyre", "Elizabeth Bennet"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel réalisateur a dirigé le film 'Les Dents de la mer' (1975) ?",
+        "reponses": ["Martin Scorsese", "Steven Spielberg", "Francis Ford Coppola"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel film d’animation des studios Disney met en scène un lion nommé Simba ?",
+        "reponses": ["Le Roi Lion", "Aladdin", "La Belle et la Bête"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel film de Charlie Chaplin est une satire de la montée du nazisme ?",
+        "reponses": ["Les Temps modernes", "Le Dictateur", "La Ruée vers l’or"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel réalisateur est connu pour des films comme 'Psychose' et 'Les Oiseaux' ?",
+        "reponses": ["Alfred Hitchcock", "Stanley Kubrick", "Orson Welles"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel film français de Jean-Pierre Jeunet raconte l'histoire d'une serveuse à Paris ?",
+        "reponses": ["Intouchables", "Le Fabuleux Destin d'Amélie Poulain", "La Haine"],
+        "bonne_reponse": 1
     }
 ]
