@@ -5,3 +5,4 @@ Fonctionnalité avancé :
 - Une fonctionnalité pour que le joueur puisse ajouter des question lui-même.
 - Ajouter des sons.
 - Ajout d'un bonus de temps en fonction du nombre de reponse juste d'affilé.
+- Ajout d'un catégorie Logo.

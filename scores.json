@@ -1,9 +1,27 @@
 [
     {
+        "pseudo": "ya2s",
+        "categorie": [
+            "Sport",
+            "Géographie"
+        ],
+        "difficulte": "Facile",
+        "score": 20
+    },
+    {
         "pseudo": "subdij",
         "categorie": "Géographie",
         "difficulte": "Moyen",
         "score": 18
+    },
+    {
+        "pseudo": "ya2s",
+        "categorie": [
+            "Géographie",
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 10
     },
     {
         "pseudo": "ziyad",
