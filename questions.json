@@ -516,5 +516,110 @@
         "question": "Quel est le nom du processus par lequel les plantes produisent de l'énergie ?",
         "reponses": ["Respiration", "Photosynthèse", "Fermentation"],
         "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Qui a composé la 9e symphonie, aussi appelée Symphonie de la joie ?",
+        "reponses": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Quel groupe légendaire britannique a écrit des chansons comme 'Hey Jude' et 'Let It Be' ?",
+        "reponses": ["The Rolling Stones", "The Beatles", "Queen"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Quel célèbre compositeur baroque a écrit 'Les Quatre Saisons' ?",
+        "reponses": ["Antonio Vivaldi", "Johann Sebastian Bach", "George Frideric Handel"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Quel opéra a été composé par Georges Bizet et raconte l’histoire d'une bohémienne séduisante ?",
+        "reponses": ["Carmen", "La Traviata", "La Bohème"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Quel compositeur autrichien est célèbre pour ses symphonies et opéras comme 'La Flûte enchantée' ?",
+        "reponses": ["Franz Schubert", "Wolfgang Amadeus Mozart", "Joseph Haydn"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Qui est l'auteur du roman 'Moby Dick' ?",
+        "reponses": ["Herman Melville", "Mark Twain", "Edgar Allan Poe"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quelle célèbre œuvre de F. Scott Fitzgerald raconte l'histoire de Jay Gatsby ?",
+        "reponses": ["Les Raisins de la colère", "Le Vieil Homme et la Mer", "Gatsby le Magnifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Dans 'Le Seigneur des Anneaux', quel est le nom de l'anneau maléfique que Frodon doit détruire ?",
+        "reponses": ["L'Anneau Unique", "L'Anneau du Destin", "L'Anneau des Ombres"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel roman dystopique écrit par George Orwell décrit un monde totalitaire où 'Big Brother' surveille tout ?",
+        "reponses": ["1984", "Le Meilleur des mondes", "La Ferme des animaux"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Qui a écrit la trilogie 'Millénium' ?",
+        "reponses": ["Stieg Larsson", "Jo Nesbø", "Henning Mankell"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel peintre hollandais est célèbre pour ses autoportraits et son utilisation dramatique de la lumière ?",
+        "reponses": ["Johannes Vermeer", "Rembrandt", "Vincent van Gogh"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel tableau a été volé au musée du Louvre en 1911 et retrouvé deux ans plus tard ?",
+        "reponses": ["La Joconde", "Le Cri", "La Naissance de Vénus"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel sculpteur français est l'auteur de la célèbre œuvre 'Le Penseur' ?",
+        "reponses": ["Auguste Rodin", "Edgar Degas", "Camille Claudel"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel peintre espagnol est associé au cubisme, notamment pour son œuvre 'Les Demoiselles d'Avignon' ?",
+        "reponses": ["Salvador Dalí", "Pablo Picasso", "Juan Gris"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel artiste surréaliste a peint 'La Persistance de la mémoire', célèbre pour ses montres molles ?",
+        "reponses": ["René Magritte", "Salvador Dalí", "Max Ernst"],
+        "bonne_reponse": 1
     }
 ]
