@@ -4,7 +4,8 @@
         "categorie": "Sport",
         "difficulte": "Moyenne",
         "question": "Quel athlète a remporté le plus de médailles aux Jeux Olympiques ?",
-        "reponses": ["Michael Phelps", "Larisa Latynina", "Bjørn Dæhlie", "Mark Spitz"]
+        "reponses": ["Michael Phelps", "Larisa Latynina", "Bjørn Dæhlie"],
+        "bonne_reponse": 0
     },
     {
         "categorie": "Géographie",
@@ -17,7 +18,7 @@
         "categorie": "Sport",
         "difficulte": "Facile",
         "question": "Quel est le nom de la compétition annuelle de tennis qui se déroule à Wimbledon ?",
-        "reponses": ["Roland-Garros", "Open d'Australie", "US Open", "Wimbledon"],
+        "reponses": [ "Open d'Australie", "US Open", "Wimbledon"],
         "bonne_reponse": 3},
 
         {"question": "Quel est le plus grand désert du monde ?",
@@ -31,14 +32,14 @@
         "difficulte": "Facile",
 
         "question": "Quel sport se joue sur un terrain rectangulaire avec des buts aux deux extrémités ?",
-        "reponses": ["Basket-ball", "Football", "Rugby", "Hockey"],
+        "reponses": ["Basket-ball", "Football", "Rugby"],
         "bonne_reponse": 1
     },
     {
         "categorie": "Sport",
         "difficulte": "Difficile",
         "question": "Quel est le nom du célèbre tournoi de golf qui se déroule chaque année à Augusta, en Géorgie ?",
-        "reponses": ["The Open", "PGA Championship", "US Open", "The Masters"],
+        "reponses": ["The Open", "PGA Championship","The Masters"],
         "bonne_reponse": 3
     }
     ,
@@ -46,14 +47,14 @@
     "categorie": "Sport",
     "difficulte": "Difficile",
     "question": "Quel pays a remporté le premier tournoi de la Coupe du Monde de football en 1930 ?",
-    "reponses": ["Argentine", "Brésil", "Uruguay", "Allemagne"],
+    "reponses": ["Argentine", "Brésil", "Uruguay"],
     "bonne_reponse": 2
     },
     {
     "categorie": "Science",
     "difficulte": "Difficile",
     "question": "Quel est l'élément chimique dont le symbole est Na ?",
-    "reponses": ["Nitrure", "Sodium", "Néon", "Nickel"],
+    "reponses": ["Nitrure", "Sodium", "Néon"],
     "bonne_reponse": 1
     }
     ,
@@ -61,14 +62,15 @@
     "categorie": "Science",
     "difficulte": "Moyenne",
     "question": "Quel est le nom de la force qui attire les objets vers la Terre ?",
-    "reponses": ["Force centrifuge", "Force gravitationnelle", "Force électromagnétique", "Force de frottement"],
+    "reponses": ["Force centrifuge", "Force gravitationnelle", "Force électromagnétique"],
     "bonne_reponse": 1
     },
     {
         "categorie": "Science",
         "difficulte": "Difficile",
         "question": "Quel est le principal acide présent dans l'estomac humain ?",
-        "reponses": ["Acide citrique", "Acide acétique", "Acide chlorhydrique", "Acide sulfurique"]
+        "reponses": ["Acide citrique", "Acide acétique", "Acide chlorhydrique"],
+        "bonne_reponse": 1
     },
     {
         "question": "Quel est le plus long fleuve du monde ?",
@@ -108,7 +110,7 @@
         "difficulte": "Difficile",
 
         "question": "Quel est le nom du processus par lequel les plantes produisent de l'énergie ?",
-        "reponses": ["Respiration", "Photosynthèse", "Fermentation", "Transpiration"],
+        "reponses": ["Respiration", "Photosynthèse", "Fermentation"],
         "bonne_reponse": 1
     },
     {
