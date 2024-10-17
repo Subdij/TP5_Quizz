@@ -1,65 +1,69 @@
 [
     {
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "question": "Quelle est la capitale de la France ?",
-        "reponses": ["Paris", "Londres", "Berlin", "Madrid"],
+        "categorie": "Sport",
+        "difficulte": "Moyenne",
+        "question": "Quel athlète a remporté le plus de médailles aux Jeux Olympiques ?",
+        "reponses": ["Michael Phelps", "Larisa Latynina", "Bjørn Dæhlie", "Mark Spitz"],
         "bonne_reponse": 0
     },
     {
-        "categorie": "Géographie",
+        "categorie": "Sport",
         "difficulte": "Facile",
-        "question": "Quel est le plus grand désert du monde ?",
-        "reponses": ["Sahara", "Gobi", "Kalahari", "Arctique"],
-        "bonne_reponse": 0
+        "question": "Quel est le nom de la compétition annuelle de tennis qui se déroule à Wimbledon ?",
+        "reponses": ["Roland-Garros", "Open d'Australie", "US Open", "Wimbledon"],
+        "bonne_reponse": 3
     },
+    
     {
-        "categorie": "Géographie",
+        "categorie": "Sport",
         "difficulte": "Facile",
-        "question": "Quel est le plus long fleuve du monde ?",
-        "reponses": ["Nil", "Amazon", "Yangtsé", "Mississippi"],
+        "question": "Quel sport se joue sur un terrain rectangulaire avec des buts aux deux extrémités ?",
+        "reponses": ["Basket-ball", "Football", "Rugby", "Hockey"],
         "bonne_reponse": 1
     },
     {
-        "categorie": "Géographie",
-        "difficulte": "Moyen", 
-        "question": "Quelle est la plus grande île du monde ?",
-        "reponses": ["Groenland", "Madagascar", "Borneo", "Nouvelle-Guinée"],
-        "bonne_reponse": 0
-    },
-    {
-        "categorie": "Géographie",
-        "difficulte": "Moyen",
-        "question": "Quel est le plus haut sommet du monde ?",
-        "reponses": ["Everest", "K2", "Kangchenjunga", "Lhotse"],
-        "bonne_reponse": 0
-    },
-    {
-        "categorie": "Géographie",
-        "difficulte": "Moyen",
-        "question": "Quel est le plus grand océan du monde ?",
-        "reponses": ["Pacifique", "Atlantique", "Indien", "Arctique"],
-        "bonne_reponse": 0
-    },
-    {
-        "categorie": "Géographie",
+        "categorie": "Sport",
         "difficulte": "Difficile",
-        "question": "Quelle est la capitale de l'Australie ?",
-        "reponses": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+        "question": "Quel est le nom du célèbre tournoi de golf qui se déroule chaque année à Augusta, en Géorgie ?",
+        "reponses": ["The Open", "PGA Championship", "US Open", "The Masters"],
+        "bonne_reponse": 3
+    }
+    ,
+    {
+    "categorie": "Sport",
+    "difficulte": "Difficile",
+    "question": "Quel pays a remporté le premier tournoi de la Coupe du Monde de football en 1930 ?",
+    "reponses": ["Argentine", "Brésil", "Uruguay", "Allemagne"],
+    "bonne_reponse": 2
+    },
+    {
+    "categorie": "Science",
+    "difficulte": "Difficile",
+    "question": "Quel est l'élément chimique dont le symbole est Na ?",
+    "reponses": ["Nitrure", "Sodium", "Néon", "Nickel"],
+    "bonne_reponse": 1
+    }
+    ,
+    {
+    "categorie": "Science",
+    "difficulte": "Moyenne",
+    "question": "Quel est le nom de la force qui attire les objets vers la Terre ?",
+    "reponses": ["Force centrifuge", "Force gravitationnelle", "Force électromagnétique", "Force de frottement"],
+    "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Difficile",
+        "question": "Quel est le principal acide présent dans l'estomac humain ?",
+        "reponses": ["Acide citrique", "Acide acétique", "Acide chlorhydrique", "Acide sulfurique"],
         "bonne_reponse": 2
     },
     {
-        "categorie": "Géographie",
+        "categorie": "Science",
         "difficulte": "Difficile",
-        "question": "Quel est le pays le plus peuplé d'Afrique ?",
-        "reponses": ["Nigeria", "Ethiopie", "Egypte", "Afrique du Sud"],
-        "bonne_reponse": 0
-    },
-    {
-        "categorie": "Géographie",
-        "difficulte": "Difficile",
-        "question": "Quel est le plus grand lac d'eau douce du monde ?",
-        "reponses": ["Lac Supérieur", "Lac Victoria", "Lac Tanganyika", "Lac Baïkal"],
-        "bonne_reponse": 0
+        "question": "Quel est le nom du processus par lequel les plantes produisent de l'énergie ?",
+        "reponses": ["Respiration", "Photosynthèse", "Fermentation", "Transpiration"],
+        "bonne_reponse": 1
     }
+    
 ]
