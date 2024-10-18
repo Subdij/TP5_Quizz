@@ -130,18 +130,20 @@ def afficher_texte(texte, x, y, couleur, taille=36, max_width=None):
         screen.blit(text_surface, (x, y))
 
 # Fonction pour afficher le bouton
-def afficher_bouton(texte, x, y, largeur, hauteur, couleur, action=None):
+def afficher_bouton(texte, x, y, largeur, hauteur, couleur, hover_couleur, action=None):
     global last_click_time
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
-    pygame.draw.rect(screen, couleur, (x, y, largeur, hauteur))
-    afficher_texte(texte, x + (largeur // 2 - font.size(texte)[0] // 2), y + (hauteur // 2 - font.size(texte)[1] // 2), WHITE)
     if x + largeur > mouse[0] > x and y + hauteur > mouse[1] > y:
+        pygame.draw.rect(screen, hover_couleur, (x, y, largeur, hauteur), border_radius=50)
         if click[0] == 1 and action is not None:
             current_time = pygame.time.get_ticks()
             if current_time - last_click_time > 200: 
                 last_click_time = current_time
                 action()
+    else:
+        pygame.draw.rect(screen, couleur, (x, y, largeur, hauteur), border_radius=50)
+    afficher_texte(texte, x + (largeur // 2 - font.size(texte)[0] // 2), y + (hauteur // 2 - font.size(texte)[1] // 2), WHITE)
 
 def render_text_wrapped(text, font, max_width):
     words = text.split(' ')
@@ -165,12 +167,12 @@ def render_text_wrapped(text, font, max_width):
 
 
 # Fonction pour afficher les boutons de réponse
-def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, hover_couleur, action=None):
+def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, HOVER_COLOR, action=None):
     global last_click_time
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
     if x + largeur > mouse[0] > x and y + hauteur > mouse[1] > y:
-        pygame.draw.rect(screen, hover_couleur, (x, y, largeur, hauteur))
+        pygame.draw.rect(screen, HOVER_COLOR, (x, y, largeur, hauteur))
         if click[0] == 1 and action is not None:
             current_time = pygame.time.get_ticks()
             if current_time - last_click_time > 500:  # Vérifier si 0.5 seconde s'est écoulée
@@ -211,12 +213,12 @@ def afficher_page_score():
         y_offset += 40
     
     if score_page > 0:
-        afficher_bouton("Précédent", 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, lambda: changer_page_score(-1))
+        afficher_bouton("Précédent", 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page_score(-1))
     
     if end_index < len(scores):
-        afficher_bouton("Suivant", SCREEN_WIDTH - 300, SCREEN_HEIGHT - 100, 200, 50, BLUE, lambda: changer_page_score(1))
+        afficher_bouton("Suivant", SCREEN_WIDTH - 300, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page_score(1))
     
-    afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, reinitialiser_jeu)
+    afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, reinitialiser_jeu)
 
 # Fonction pour changer la page de score
 def changer_page_score(direction):
@@ -249,9 +251,10 @@ def afficher_page_difficulte():
     global page, difficulte
     screen.fill(WHITE)
     afficher_texte("Choisissez la difficulté:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 100, BLACK)
-    afficher_bouton("Facile", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 50, BLUE, lambda: choisir_difficulte("Facile"))
-    afficher_bouton("Moyen", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, lambda: choisir_difficulte("Moyen"))
-    afficher_bouton("Difficile", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 + 50, 200, 50, BLUE, lambda: choisir_difficulte("Difficile"))
+    spacing = 20  # Espacement entre les boutons
+    afficher_bouton("Facile", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Facile"))
+    afficher_bouton("Moyen", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50 + 50 + spacing, 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Moyen"))
+    afficher_bouton("Difficile", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50 + 2 * (50 + spacing), 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Difficile"))
     pygame.display.flip()
 
 # Fonction pour choisir la difficulté
@@ -286,10 +289,10 @@ def afficher_page_categorie():
         x = 90 + col * column_width
         y = SCREEN_HEIGHT // 2 - 50 + row * row_height
         couleur = BLUE if cat not in categories_selectionnees else HOVER_COLOR
-        afficher_bouton(cat, x, y, button_width, button_height, couleur, lambda c=cat: choisir_categorie(c))
+        afficher_bouton(cat, x, y, button_width, button_height, couleur, HOVER_COLOR, lambda c=cat: choisir_categorie(c))
     
     if categories_selectionnees:
-        afficher_bouton("Commencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, commencer_quiz)
+        afficher_bouton("Commencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, commencer_quiz)
     
     pygame.display.flip()
 
@@ -381,7 +384,7 @@ while running:
                 afficher_bouton_reponse(str(i+1) + ". " + reponse, SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 + i*50, 400, 50, BLUE, HOVER_COLOR, lambda idx=idx: verifier_reponse(idx))
 
         # Afficher le bouton pour aller à la page de score
-        afficher_bouton("Voir Scores", SCREEN_WIDTH // 2 - 100, 50, 200, 50, BLUE, afficher_page_score)
+        afficher_bouton("Voir Scores", SCREEN_WIDTH // 2 - 100, 50, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
     else:
         afficher_texte("Aucune question disponible.", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2, RED)
 
@@ -410,4 +413,4 @@ while running:
     # Contrôler la vitesse de la boucle
     clock.tick(60)
 
-pygame.quit() 
+pygame.quit()
