@@ -23,6 +23,8 @@ pygame.display.set_caption("Quiz Pygame")
 font = pygame.font.Font(None, 36)
 
 # Variables
+cursor_visible = True
+cursor_last_switch = 0
 quiz_termine = False
 score = 0
 temps_restant = 30
@@ -224,11 +226,22 @@ def changer_page_score(direction):
 
 # Fonction pour afficher la page de pseudo
 def afficher_page_pseudo():
-    global pseudo, page
+    global pseudo, page, cursor_visible, cursor_last_switch
     screen.fill(WHITE)
     afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, BLACK)
     pygame.draw.rect(screen, BLACK, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
     afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, BLACK)
+    
+    # Gérer le curseur clignotant
+    current_time = pygame.time.get_ticks()
+    if current_time - cursor_last_switch > 500:  # Changer l'état du curseur toutes les 500 ms
+        cursor_visible = not cursor_visible
+        cursor_last_switch = current_time
+    
+    if cursor_visible:
+        cursor_x = SCREEN_WIDTH // 2 - 90 + font.size(pseudo)[0]
+        pygame.draw.line(screen, BLACK, (cursor_x, SCREEN_HEIGHT // 2 + 10), (cursor_x, SCREEN_HEIGHT // 2 + 40), 2)
+    
     pygame.display.flip()
 
 # Fonction pour afficher la page de difficulté
@@ -397,4 +410,4 @@ while running:
     # Contrôler la vitesse de la boucle
     clock.tick(60)
 
-pygame.quit()
+pygame.quit() 
