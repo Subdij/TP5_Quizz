@@ -43,9 +43,21 @@ scores_per_page = 7  # Nombre de scores à afficher par page
 multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
 
-# Charger l'image de fond
-background_image = pygame.image.load('images/score.jpg')
-background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
+# Charger les images de fond
+background_image_pseudo = pygame.image.load('images\score.jpg')
+background_image_pseudo = pygame.transform.scale(background_image_pseudo, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_difficulte = pygame.image.load('images\score.jpg')
+background_image_difficulte = pygame.transform.scale(background_image_difficulte, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_categorie = pygame.image.load('images\score.jpg')
+background_image_categorie = pygame.transform.scale(background_image_categorie, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_principale = pygame.image.load('images\score.jpg')
+background_image_principale = pygame.transform.scale(background_image_principale, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_score = pygame.image.load('images\score.jpg')
+background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges
@@ -104,7 +116,7 @@ def render_text_wrapped(text, font, max_width):
     current_width = 0
 
     for word in words:
-        word_surface = font.render(word, True, BLACK)
+        word_surface = font.render(word, True, WHITE)
         word_width = word_surface.get_width()
         if current_width + word_width >= max_width:
             lines.append(' '.join(current_line))
@@ -152,7 +164,7 @@ def render_text_wrapped(text, font, max_width):
     current_width = 0
 
     for word in words:
-        word_surface = font.render(word, True, BLACK)
+        word_surface = font.render(word, True, WHITE)
         word_width = word_surface.get_width()
         if current_width + word_width >= max_width:
             lines.append(' '.join(current_line))
@@ -186,14 +198,13 @@ def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, HOVER_COLOR,
 def afficher_page_principale():
     global page 
     page = "principale"
+    screen.blit(background_image_principale, (0, 0))
 
 # Fonction pour afficher la page de score
 def afficher_page_score():
     global page, score_page
     page = "score"
-    
-    # Afficher l'image de fond
-    screen.blit(background_image, (0, 0))
+    screen.blit(background_image_score, (0, 0))
     
     afficher_texte("Scores", SCREEN_WIDTH // 2 - 50, 70, WHITE, taille=48)
     
@@ -229,10 +240,10 @@ def changer_page_score(direction):
 # Fonction pour afficher la page de pseudo
 def afficher_page_pseudo():
     global pseudo, page, cursor_visible, cursor_last_switch
-    screen.fill(WHITE)
-    afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, BLACK)
-    pygame.draw.rect(screen, BLACK, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
-    afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, BLACK)
+    screen.blit(background_image_pseudo, (0, 0))
+    afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, WHITE)
+    pygame.draw.rect(screen, WHITE, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
+    afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, WHITE)
     
     # Gérer le curseur clignotant
     current_time = pygame.time.get_ticks()
@@ -242,15 +253,15 @@ def afficher_page_pseudo():
     
     if cursor_visible:
         cursor_x = SCREEN_WIDTH // 2 - 90 + font.size(pseudo)[0]
-        pygame.draw.line(screen, BLACK, (cursor_x, SCREEN_HEIGHT // 2 + 10), (cursor_x, SCREEN_HEIGHT // 2 + 40), 2)
+        pygame.draw.line(screen, WHITE, (cursor_x, SCREEN_HEIGHT // 2 + 10), (cursor_x, SCREEN_HEIGHT // 2 + 40), 2)
     
     pygame.display.flip()
 
 # Fonction pour afficher la page de difficulté
 def afficher_page_difficulte():
     global page, difficulte
-    screen.fill(WHITE)
-    afficher_texte("Choisissez la difficulté:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 100, BLACK)
+    screen.blit(background_image_difficulte, (0, 0))
+    afficher_texte("Choisissez la difficulté:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 100, WHITE)
     spacing = 20  # Espacement entre les boutons
     afficher_bouton("Facile", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Facile"))
     afficher_bouton("Moyen", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50 + 50 + spacing, 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Moyen"))
@@ -272,8 +283,8 @@ def choisir_difficulte(diff):
 # Fonction pour afficher la page de catégorie
 def afficher_page_categorie():
     global page, categories_selectionnees
-    screen.fill(WHITE)
-    afficher_texte("Choisissez les catégories:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 150, BLACK)
+    screen.blit(background_image_categorie, (0, 0))
+    afficher_texte("Choisissez les catégories:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 150, WHITE)
     
     categories = list(set([q["categorie"] for q in all_questions]))
     num_columns = 3
@@ -357,10 +368,10 @@ while running:
         afficher_page_categorie()
     elif page == "principale":
         # Effacer l'écran
-        screen.fill(WHITE)
+        screen.blit(background_image_principale, (0, 0)),
 
         # Afficher le score
-        afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, BLACK)
+        afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, WHITE)
 
         # Calculer le temps restant pour la question
         seconds = (pygame.time.get_ticks() - start_ticks) // 1000
@@ -376,7 +387,7 @@ while running:
         if questions:
             # Afficher la question
             question = questions[question_actuelle]
-            afficher_texte(question["question"], SCREEN_WIDTH // 2 - 250, SCREEN_HEIGHT // 2 - 100, BLACK, taille=36, max_width=550)
+            afficher_texte(question["question"], SCREEN_WIDTH // 2 - 250, SCREEN_HEIGHT // 2 - 100, WHITE, taille=36, max_width=550)
 
             # Afficher les réponses
             for i, idx in enumerate(indices_melanges[question_actuelle]):
