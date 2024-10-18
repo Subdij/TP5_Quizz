@@ -40,6 +40,7 @@ score_page = 0  # Page actuelle des scores
 scores_per_page = 7  # Nombre de scores à afficher par page
 multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
+streak = 0  # "Compteur" de bonnes réponses d'affilée, afin d'activer des bonus de temps
 
 # Charger l'image de fond
 background_image = pygame.image.load('images/score.jpg')
@@ -238,10 +239,13 @@ def commencer_quiz():
 
 # Fonction pour vérifier la réponse
 def verifier_reponse(index):
-    global score, question_actuelle, page, temps_question, start_ticks, temps_global
+    global score, question_actuelle, page, temps_question, start_ticks, temps_global, streak
     if questions[question_actuelle]["bonne_reponse"] == index:
+        streak += 1  # Ajouter 1 à la streak en cas de bonne réponse
         score += 1 * multiplicateur
         score += temps_question * multiplicateur  # Ajouter le temps restant au score avec le multiplicateur
+    else:
+        streak = 0  # Remise à 0 de la streak en cas de mauvaise réponse
     question_actuelle += 1
     temps_question = 10  # Réinitialiser le temps pour la prochaine question
     start_ticks = pygame.time.get_ticks()  # Réinitialiser le timer pour la prochaine question
@@ -284,7 +288,7 @@ while running:
 
         # Afficher le score
         afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, BLACK)
-
+        
         # Calculer le temps restant pour la question
         seconds = (pygame.time.get_ticks() - start_ticks) // 1000
         temps_question = max(10 - seconds, 0)
@@ -293,6 +297,8 @@ while running:
         # Calculer le temps global restant
         seconds_global = (pygame.time.get_ticks() - start_ticks_global) // 1000
         temps_global = max(60 - seconds_global, 0)
+        if streak>3:    # Vérifier si le joueur a répondu correctement à plus de 3 questions d'affilée
+            temps_global += streak-3    # On ajoute x secondes au timer global en fonction du nombre de bonnes réponses qui dépassent 3 (ex: 1 seconde pour streak de 4,...)
         afficher_texte("Temps global: " + str(temps_global), 20, 50, RED)
 
         # Vérifier que la liste des questions n'est pas vide
