@@ -245,6 +245,11 @@ def changer_page(nouvelle_page):
     global page
     page = nouvelle_page
 
+# Fonction pour changer de page
+def changer_page(nouvelle_page):
+    global page
+    page = nouvelle_page
+
 # Fonction pour changer la page de score
 def changer_page_score(direction):
     global score_page
@@ -356,6 +361,7 @@ running = True
 clock = pygame.time.Clock()
 start_ticks = pygame.time.get_ticks()
 page = "accueil"  # Commencer par la page d'accueil
+page = "accueil"  # Commencer par la page d'accueil
 scores = charger_scores()
 
 # Mélanger les questions au lancement de l'application
@@ -374,6 +380,9 @@ while running:
             elif len(pseudo) < 12:
                 pseudo += event.unicode
 
+    if page == "accueil":
+        afficher_page_accueil()
+    elif page == "pseudo":
     if page == "accueil":
         afficher_page_accueil()
     elif page == "pseudo":
