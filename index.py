@@ -44,19 +44,19 @@ multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
 
 # Charger les images de fond
-background_image_accueil = pygame.image.load('images\score.jpg')
+background_image_accueil = pygame.image.load(r'images\score.jpg')
 background_image_accueil = pygame.transform.scale(background_image_accueil, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_pseudo = pygame.image.load('images\score.jpg')
+background_image_pseudo = pygame.image.load(r'images\score.jpg')
 background_image_pseudo = pygame.transform.scale(background_image_pseudo, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_difficulte = pygame.image.load('images\score.jpg')
+background_image_difficulte = pygame.image.load(r'images\score.jpg')
 background_image_difficulte = pygame.transform.scale(background_image_difficulte, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_categorie = pygame.image.load('images\score.jpg')
+background_image_categorie = pygame.image.load(r'images\score.jpg')
 background_image_categorie = pygame.transform.scale(background_image_categorie, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_score = pygame.image.load('images\score.jpg')
+background_image_score = pygame.image.load(r'images\score.jpg')
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def reinitialiser_jeu():
