@@ -207,7 +207,7 @@ def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, HOVER_COLOR,
 def afficher_page_principale():
     global page 
     page = "principale"
-    screen.blit(background_image_principale, (0, 0))
+    screen.blit(background_image_accueil, (0, 0))
 
 # Fonction pour afficher la page de score
 def afficher_page_score():
