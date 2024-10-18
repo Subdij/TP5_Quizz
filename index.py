@@ -209,14 +209,27 @@ def choisir_difficulte(diff):
 def afficher_page_categorie():
     global page, categories_selectionnees
     screen.fill(WHITE)
-    afficher_texte("Choisissez les catégories:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 100, BLACK)
+    afficher_texte("Choisissez les catégories:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 150, BLACK)
+    
     categories = list(set([q["categorie"] for q in all_questions]))
-    y_offset = SCREEN_HEIGHT // 2 - 50
+    num_columns = 3
+    button_width = 200
+    button_height = 50
+    padding = 10
+    column_width = button_width + padding
+    row_height = button_height + padding
+    
     for i, cat in enumerate(categories):
+        col = i % num_columns
+        row = i // num_columns
+        x = 90 + col * column_width
+        y = SCREEN_HEIGHT // 2 - 50 + row * row_height
         couleur = BLUE if cat not in categories_selectionnees else HOVER_COLOR
-        afficher_bouton(cat, SCREEN_WIDTH // 2 - 100, y_offset + i * 60, 200, 50, couleur, lambda c=cat: choisir_categorie(c))
+        afficher_bouton(cat, x, y, button_width, button_height, couleur, lambda c=cat: choisir_categorie(c))
+    
     if categories_selectionnees:
         afficher_bouton("Commencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, commencer_quiz)
+    
     pygame.display.flip()
 
 def choisir_categorie(cat):
