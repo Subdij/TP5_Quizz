@@ -44,6 +44,9 @@ multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
 
 # Charger les images de fond
+background_image_accueil = pygame.image.load('images\score.jpg')
+background_image_accueil = pygame.transform.scale(background_image_accueil, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
 background_image_pseudo = pygame.image.load('images\score.jpg')
 background_image_pseudo = pygame.transform.scale(background_image_pseudo, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
@@ -52,9 +55,6 @@ background_image_difficulte = pygame.transform.scale(background_image_difficulte
 
 background_image_categorie = pygame.image.load('images\score.jpg')
 background_image_categorie = pygame.transform.scale(background_image_categorie, (SCREEN_WIDTH, SCREEN_HEIGHT))
-
-background_image_principale = pygame.image.load('images\score.jpg')
-background_image_principale = pygame.transform.scale(background_image_principale, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 background_image_score = pygame.image.load('images\score.jpg')
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -178,6 +178,15 @@ def render_text_wrapped(text, font, max_width):
     return lines
 
 
+# Fonction pour afficher la page d'accueil
+def afficher_page_accueil():
+    global page
+    screen.blit(background_image_accueil, (0, 0))
+    afficher_texte("Bienvenue au Quiz Down!", SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, WHITE, taille=48)
+    afficher_bouton("Play", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("pseudo"))
+    pygame.display.flip()
+
+
 # Fonction pour afficher les boutons de réponse
 def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, HOVER_COLOR, action=None):
     global last_click_time
@@ -198,7 +207,7 @@ def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, HOVER_COLOR,
 def afficher_page_principale():
     global page 
     page = "principale"
-    screen.blit(background_image_principale, (0, 0))
+    screen.blit(background_image_accueil, (0, 0))
 
 # Fonction pour afficher la page de score
 def afficher_page_score():
@@ -230,6 +239,16 @@ def afficher_page_score():
         afficher_bouton("Suivant", SCREEN_WIDTH - 300, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page_score(1))
     
     afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, reinitialiser_jeu)
+
+# Fonction pour changer de page
+def changer_page(nouvelle_page):
+    global page
+    page = nouvelle_page
+
+# Fonction pour changer de page
+def changer_page(nouvelle_page):
+    global page
+    page = nouvelle_page
 
 # Fonction pour changer la page de score
 def changer_page_score(direction):
@@ -341,7 +360,8 @@ def verifier_reponse(index):
 running = True
 clock = pygame.time.Clock()
 start_ticks = pygame.time.get_ticks()
-page = "pseudo"
+page = "accueil"  # Commencer par la page d'accueil
+page = "accueil"  # Commencer par la page d'accueil
 scores = charger_scores()
 
 # Mélanger les questions au lancement de l'application
@@ -360,7 +380,9 @@ while running:
             elif len(pseudo) < 12:
                 pseudo += event.unicode
 
-    if page == "pseudo":
+    if page == "accueil":
+        afficher_page_accueil()
+    elif page == "pseudo":
         afficher_page_pseudo()
     elif page == "difficulte":
         afficher_page_difficulte()
@@ -368,7 +390,7 @@ while running:
         afficher_page_categorie()
     elif page == "principale":
         # Effacer l'écran
-        screen.blit(background_image_principale, (0, 0)),
+        screen.blit(background_image_accueil, (0, 0)),
 
         # Afficher le score
         afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, WHITE)
