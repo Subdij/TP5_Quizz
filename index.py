@@ -94,11 +94,38 @@ def sauvegarder_scores():
     with open('scores.json', 'w', encoding='utf-8') as f:
         json.dump(scores, f, indent=4, ensure_ascii=False)
 
+
+def render_text_wrapped(text, font, max_width):
+    words = text.split(' ')
+    lines = []
+    current_line = []
+    current_width = 0
+
+    for word in words:
+        word_surface = font.render(word, True, BLACK)
+        word_width = word_surface.get_width()
+        if current_width + word_width >= max_width:
+            lines.append(' '.join(current_line))
+            current_line = [word]
+            current_width = word_width
+        else:
+            current_line.append(word)
+            current_width += word_width + font.size(' ')[0]
+
+    lines.append(' '.join(current_line))
+    return lines        
+
 # Fonction pour afficher le texte
-def afficher_texte(texte, x, y, couleur, taille=36):
+def afficher_texte(texte, x, y, couleur, taille=36, max_width=None):
     font = pygame.font.Font(None, taille)
-    text_surface = font.render(texte, True, couleur)
-    screen.blit(text_surface, (x, y))
+    if max_width:
+        lines = render_text_wrapped(texte, font, max_width)
+        for i, line in enumerate(lines):
+            text_surface = font.render(line, True, couleur)
+            screen.blit(text_surface, (x, y + i * taille))
+    else:
+        text_surface = font.render(texte, True, couleur)
+        screen.blit(text_surface, (x, y))
 
 # Fonction pour afficher le bouton
 def afficher_bouton(texte, x, y, largeur, hauteur, couleur, action=None):
@@ -113,6 +140,27 @@ def afficher_bouton(texte, x, y, largeur, hauteur, couleur, action=None):
             if current_time - last_click_time > 200: 
                 last_click_time = current_time
                 action()
+
+def render_text_wrapped(text, font, max_width):
+    words = text.split(' ')
+    lines = []
+    current_line = []
+    current_width = 0
+
+    for word in words:
+        word_surface = font.render(word, True, BLACK)
+        word_width = word_surface.get_width()
+        if current_width + word_width >= max_width:
+            lines.append(' '.join(current_line))
+            current_line = [word]
+            current_width = word_width
+        else:
+            current_line.append(word)
+            current_width += word_width + font.size(' ')[0]
+
+    lines.append(' '.join(current_line))
+    return lines
+
 
 # Fonction pour afficher les boutons de réponse
 def afficher_bouton_reponse(texte, x, y, largeur, hauteur, couleur, hover_couleur, action=None):
@@ -312,7 +360,7 @@ while running:
         if questions:
             # Afficher la question
             question = questions[question_actuelle]
-            afficher_texte(question["question"], SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, BLACK)
+            afficher_texte(question["question"], SCREEN_WIDTH // 2 - 250, SCREEN_HEIGHT // 2 - 100, BLACK, taille=36, max_width=550)
 
             # Afficher les réponses
             for i, idx in enumerate(indices_melanges[question_actuelle]):
