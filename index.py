@@ -383,9 +383,6 @@ while running:
     if page == "accueil":
         afficher_page_accueil()
     elif page == "pseudo":
-    if page == "accueil":
-        afficher_page_accueil()
-    elif page == "pseudo":
         afficher_page_pseudo()
     elif page == "difficulte":
         afficher_page_difficulte()
@@ -393,7 +390,7 @@ while running:
         afficher_page_categorie()
     elif page == "principale":
         # Effacer l'écran
-        screen.blit(background_image_principale, (0, 0)),
+        screen.blit(background_image_accueil, (0, 0)),
 
         # Afficher le score
         afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, WHITE)
