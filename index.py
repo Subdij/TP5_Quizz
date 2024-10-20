@@ -48,6 +48,22 @@ streak = 0  # "Compteur" de bonnes réponses d'affilée, afin d'activer des bonu
 background_image = pygame.image.load('images/score.jpg')
 background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
+# Charger les images de fond
+background_image_accueil = pygame.image.load(r'images\score.jpg')
+background_image_accueil = pygame.transform.scale(background_image_accueil, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_pseudo = pygame.image.load(r'images\score.jpg')
+background_image_pseudo = pygame.transform.scale(background_image_pseudo, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_difficulte = pygame.image.load(r'images\score.jpg')
+background_image_difficulte = pygame.transform.scale(background_image_difficulte, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_categorie = pygame.image.load(r'images\score.jpg')
+background_image_categorie = pygame.transform.scale(background_image_categorie, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+background_image_score = pygame.image.load(r'images\score.jpg')
+background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges
     score = 0
