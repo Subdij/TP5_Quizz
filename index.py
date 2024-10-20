@@ -397,7 +397,7 @@ while running:
         screen.blit(background_image_accueil, (0, 0)),
 
         # Afficher le score
-        afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, BLACK)
+        afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, WHITE)
         
         # Calculer le temps restant pour la question
         seconds = (pygame.time.get_ticks() - start_ticks) // 1000
