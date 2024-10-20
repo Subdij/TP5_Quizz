@@ -44,10 +44,6 @@ multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
 streak = 0  # "Compteur" de bonnes réponses d'affilée, afin d'activer des bonus de temps
 
-# Charger l'image de fond
-background_image = pygame.image.load('images/score.jpg')
-background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
-
 # Charger les images de fond
 background_image_accueil = pygame.image.load(r'images\score.jpg')
 background_image_accueil = pygame.transform.scale(background_image_accueil, (SCREEN_WIDTH, SCREEN_HEIGHT))
