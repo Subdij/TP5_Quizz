@@ -621,5 +621,264 @@
         "question": "Quel artiste surréaliste a peint 'La Persistance de la mémoire', célèbre pour ses montres molles ?",
         "reponses": ["René Magritte", "Salvador Dalí", "Max Ernst"],
         "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel poète français a écrit 'Les Fleurs du mal', une œuvre controversée à sa sortie ?",
+        "reponses": ["Arthur Rimbaud", "Charles Baudelaire", "Paul Verlaine"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Dans quelle œuvre de James Joyce le personnage de Leopold Bloom vit une journée à Dublin ?",
+        "reponses": ["Dublinois", "Ulysse", "Finnegans Wake"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel écrivain russe est l’auteur du roman 'Les Frères Karamazov' ?",
+        "reponses": ["Léon Tolstoï", "Fiodor Dostoïevski", "Ivan Tourgueniev"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel dramaturge grec est l’auteur de la tragédie 'Œdipe roi' ?",
+        "reponses": ["Euripide", "Aristophane", "Sophocle"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Qui a écrit 'La Montagne magique', considéré comme l'une des œuvres maîtresses du roman moderniste allemand ?",
+        "reponses": ["Hermann Hesse", "Thomas Mann", "Günter Grass"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel peintre espagnol a réalisé le tableau 'Les Ménines' (1656), considéré comme un chef-d’œuvre du baroque ?",
+        "reponses": ["Francisco Goya", "Diego Velázquez", "El Greco"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel sculpteur italien de la Renaissance a réalisé la sculpture 'Moïse' pour la tombe de Jules II ?",
+        "reponses": ["Michel-Ange", "Donatello", "Lorenzo Ghiberti"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel peintre flamand a créé le triptyque 'Le Jardin des délices' ?",
+        "reponses": ["Pieter Brueghel l'Ancien", "Hieronymus Bosch", "Jan van Eyck"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Qui a réalisé la sculpture avant-gardiste 'Fontaine', signée R. Mutt, qui représente un urinoir inversé ?",
+        "reponses": ["Marcel Duchamp", "Constantin Brâncuși", "Pablo Picasso"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel peintre italien de la Renaissance a révolutionné l’art du portrait avec 'La Chambre des Époux' (La Camera degli Sposi) à Mantoue ?",
+        "reponses": ["Andrea Mantegna", "Sandro Botticelli", "Leonardo da Vinci"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel réalisateur suédois est célèbre pour des films comme 'Le Septième Sceau' et 'Cris et chuchotements' ?",
+        "reponses": ["Ingmar Bergman", "Andrei Tarkovski", "Federico Fellini"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel film d'Eisenstein est célèbre pour sa scène du massacre sur les escaliers d'Odessa ?",
+        "reponses": ["Ivan le Terrible", "Le Cuirassé Potemkine", "Alexandre Nevski"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel cinéaste est l'auteur du film surréaliste 'Un Chien andalou' en collaboration avec Salvador Dalí ?",
+        "reponses": ["Luis Buñuel", "Jean Cocteau", "Sergei Eisenstein"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel film de Robert Bresson raconte l’histoire d’un prisonnier de guerre s’évadant d’une prison pendant la Seconde Guerre mondiale ?",
+        "reponses": ["Pickpocket", "Un condamné à mort s’est échappé", "Le Journal d'un curé de campagne"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel cinéaste italien est connu pour des films néoréalistes comme 'Le Voleur de bicyclette' ?",
+        "reponses": ["Luchino Visconti", "Vittorio De Sica", "Roberto Rossellini"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur allemand a écrit le cycle de quatre opéras 'L'Anneau du Nibelung' ?",
+        "reponses": ["Richard Wagner", "Ludwig van Beethoven", "Johannes Brahms"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur hongrois a introduit des éléments de musique folklorique dans ses compositions modernes comme 'Musique pour cordes, percussion et célesta' ?",
+        "reponses": ["Béla Bartók", "Zoltán Kodály", "György Ligeti"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur français est connu pour son ballet 'Daphnis et Chloé' et son œuvre pour piano 'Gaspard de la nuit' ?",
+        "reponses": ["Maurice Ravel", "Claude Debussy", "Erik Satie"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur américain a créé l’opéra 'Porgy and Bess' en 1935 ?",
+        "reponses": ["Leonard Bernstein", "George Gershwin", "Aaron Copland"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur autrichien est l’auteur de 'La Symphonie n°8', surnommée 'Symphonie des mille' ?",
+        "reponses": ["Franz Schubert", "Anton Bruckner", "Gustav Mahler"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel roi anglais a été décapité en 1649 après la guerre civile ?",
+        "reponses": ["Charles Ier", "Henri VIII", "Richard III"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle est la capitale de l'Italie ?",
+        "reponses": ["Rome", "Venise", "Florence"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Dans quel pays se trouve la ville de Timbuktu ?",
+        "reponses": ["Mali", "Niger", "Tchad"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "De quoi est principalement constituée l’atmosphère terrestre ?",
+        "reponses": ["Azote", "Oxygène", "Dioxyde de carbone"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Qui a découvert la pénicilline en 1928 ?",
+        "reponses": ["Marie Curie", "Alexander Fleming", "Isaac Newton"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Difficile",
+        "question": "Quelle est la constante de Planck, utilisée en mécanique quantique ?",
+        "reponses": ["6,626 × 10^-34 J·s", "3,14", "9,81 m/s²"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Facile",
+        "question": "Quel artiste est célèbre pour avoir peint la 'Nuit étoilée' ?",
+        "reponses": ["Vincent van Gogh", "Claude Monet", "Paul Cézanne"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel peintre a créé l’œuvre 'Le Cri' ?",
+        "reponses": ["Edvard Munch", "Salvador Dalí", "Pablo Picasso"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Qui est l'auteur du tableau 'Le Sacre de Napoléon' ?",
+        "reponses": ["Jacques-Louis David", "Eugène Delacroix", "Jean-Auguste-Dominique Ingres"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Quel chanteur est surnommé 'le Roi de la Pop' ?",
+        "reponses": ["Elvis Presley", "Michael Jackson", "Prince"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Qui a composé 'La Passion selon saint Matthieu' ?",
+        "reponses": ["Johann Sebastian Bach", "Wolfgang Amadeus Mozart", "Ludwig van Beethoven"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Dans quel sport utilise-t-on un ballon ovale ?",
+        "reponses": ["Rugby", "Football", "Basketball"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Quelle équipe nationale a remporté la Coupe du monde de football en 1998 ?",
+        "reponses": ["Allemagne", "Brésil", "France"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Difficile",
+        "question": "Quel coureur cycliste a remporté le Tour de France à cinq reprises dans les années 1960 et 1970 ?",
+        "reponses": ["Eddy Merckx", "Bernard Hinault", "Jacques Anquetil"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Dans quel film de Disney trouve-t-on la chanson 'Libérée, délivrée' ?",
+        "reponses": ["La Reine des neiges", "Raiponce", "Moana"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Moyen",
+        "question": "Qui a réalisé le film 'Inception' ?",
+        "reponses": ["Christopher Nolan", "Steven Spielberg", "David Fincher"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel film de Stanley Kubrick raconte une odyssée dans l’espace ?",
+        "reponses": ["2001, l'Odyssée de l'espace", "Orange mécanique", "Shining"],
+        "bonne_reponse": 0
     }
 ]
