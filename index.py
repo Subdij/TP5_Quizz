@@ -265,6 +265,8 @@ def afficher_page_pseudo():
     pygame.draw.rect(screen, WHITE, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
     afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, WHITE)
     
+    afficher_bouton("Retour", 300, 400, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
+    
     # Gérer le curseur clignotant
     current_time = pygame.time.get_ticks()
     if current_time - cursor_last_switch > 500:  # Changer l'état du curseur toutes les 500 ms
