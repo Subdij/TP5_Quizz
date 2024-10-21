@@ -185,6 +185,7 @@ def afficher_page_accueil():
     screen.blit(background_image_accueil, (0, 0))
     afficher_texte("Bienvenue au Quiz Down!", SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, WHITE, taille=48)
     afficher_bouton("Play", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("pseudo"))
+    afficher_bouton("Classement", SCREEN_WIDTH // 2 - 100, 370, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
     pygame.display.flip()
 
 
@@ -240,6 +241,8 @@ def afficher_page_score():
         afficher_bouton("Suivant", SCREEN_WIDTH - 300, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page_score(1))
     
     afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, reinitialiser_jeu)
+    
+    afficher_bouton("Accueil", 70, 60, 230, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
 
 # Fonction pour changer de page
 def changer_page(nouvelle_page):
@@ -265,7 +268,7 @@ def afficher_page_pseudo():
     pygame.draw.rect(screen, WHITE, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
     afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, WHITE)
     
-    afficher_bouton("Retour", 300, 400, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
+    afficher_bouton("<-- Accueil <--", 80, 70, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
     
     # Gérer le curseur clignotant
     current_time = pygame.time.get_ticks()
@@ -367,7 +370,6 @@ running = True
 clock = pygame.time.Clock()
 start_ticks = pygame.time.get_ticks()
 page = "accueil"  # Commencer par la page d'accueil
-page = "accueil"  # Commencer par la page d'accueil
 scores = charger_scores()
 
 # Mélanger les questions au lancement de l'application
@@ -399,7 +401,7 @@ while running:
         screen.blit(background_image_accueil, (0, 0)),
 
         # Afficher le score
-        afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, BLACK)
+        afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, WHITE)
         
         # Calculer le temps restant pour la question
         seconds = (pygame.time.get_ticks() - start_ticks) // 1000
@@ -424,8 +426,6 @@ while running:
                 reponse = question["reponses"][idx]
                 afficher_bouton_reponse(str(i+1) + ". " + reponse, SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 + i*50, 400, 50, BLUE, HOVER_COLOR, lambda idx=idx: verifier_reponse(idx))
 
-        # Afficher le bouton pour aller à la page de score
-        afficher_bouton("Voir Scores", SCREEN_WIDTH // 2 - 100, 50, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
     else:
         afficher_texte("Aucune question disponible.", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2, RED)
 
