@@ -1489,5 +1489,96 @@
         "question": "Qui a été le roi de France pendant la Révolution française ?",
         "reponses": ["Louis XVI", "Louis XIV", "Louis XV"],
         "bonne_reponse": 0
-    }        
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quelle bataille a eu lieu en 1066, marquant la conquête normande de l'Angleterre ?",
+        "reponses": ["La bataille de Hastings", "La bataille de Waterloo", "La bataille de Bosworth"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Qui était le dirigeant soviétique pendant la crise des missiles de Cuba en 1962 ?",
+        "reponses": ["Léon Trotsky", "Joseph Staline", "Nikita Khrouchtchev"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quelle invention a permis à Martin Luther de diffuser ses idées réformistes au XVIe siècle ?",
+        "reponses": ["La presse à imprimer", "La boussole", "L'horloge"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel événement a déclenché la Révolution américaine en 1775 ?",
+        "reponses": ["La déclaration d'indépendance", "La Boston Tea Party", "La bataille de Lexington et Concord"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Qui a écrit la Déclaration d'indépendance des États-Unis en 1776 ?",
+        "reponses": ["George Washington", "Thomas Jefferson", "Benjamin Franklin"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel pharaon égyptien est connu pour sa tombe intacte découverte en 1922 ?",
+        "reponses": ["Ramsès II", "Toutankhamon", "Akhenaton"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel pays a été le premier à accorder le droit de vote aux femmes ?",
+        "reponses": ["Nouvelle-Zélande", "États-Unis", "France"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quelle guerre a opposé le Nord et le Sud des États-Unis ?",
+        "reponses": ["La guerre de Sécession", "La guerre d'indépendance", "La guerre de 1812"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel mouvement a été lancé par Martin Luther au XVIe siècle pour réformer l'Église catholique ?",
+        "reponses": ["La Contre-Réforme", "La Réforme", "Le Protestantisme"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel pays a été le premier à abolir l'esclavage en 1794 ?",
+        "reponses": ["France", "Royaume-Uni", "États-Unis"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel empereur romain a régné pendant le début de l'ère chrétienne ?",
+        "reponses": ["Auguste", "Néron", "Caligula"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Qui a été le leader des Bolcheviks lors de la Révolution d'Octobre en 1917 ?",
+        "reponses": ["Staline", "Lénine", "Trotsky"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel mouvement artistique et intellectuel a eu lieu en Europe au cours des XIVe et XVème siècles et a favorisé un retour aux sources de la culture classique ?",
+        "reponses": ["Le Romantisme", "La Renaissance", "Le Baroque"],
+        "bonne_reponse": 1
+    }              
 ]
