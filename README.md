@@ -17,9 +17,9 @@ Le Quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
 ### Contributeurs
 
 - **Ziyad** : Responsable de l'architecture du projet et de la résolution de différents problèmes.
-- **Ines** : Responsable du développement et de la logique des questions du quiz.
+- **Inès** : Responsable du développement et de la logique des questions du quiz.
 - **Yassine** : Responsable des fonctions avancées, de leur logique et de leur intégration.
-- **Nihel** : Résponsable Développement d'idées de questions et du développement des fonctionnalités.
+- **Nihel** : Responsable Développement d'idées de questions et du développement des fonctionnalités.
 - **Nicolas** : Responsable du design de l'application et de son intégration.
 
 ### Description des Tâches
@@ -29,24 +29,24 @@ Le Quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
   - Intégration des différentes fonctionnalités.
   - Supervision du développement global.
 
-- **Ines** :
+- **Inès** :
   - Développement des questions du quiz.
-  - Création des pages d'accueil, de pseudo, de difficulté, de catégorie, et de score.
-  - Gestions et teste des interactions joueur et debugage.
+  - Création du système de streak (de l'idée à la mise en place)
+  - Gestion et tests des interactions joueur et débugage.
 
 - **Yassine** :
-  - mettre en place la faisabilité des idée des fonctionnalités.
+  - .
   - .
   - .
 
 - **Nihel** :
-  - Implémentation des fonctionnalités de jeu.
-  - Système de score et gestion des bonus.
-  - Gestion du temps pour les questions et le quiz global.
+  - .
+  - .
+  - .
 
 - **Nicolas** :
-  - Documentation du projet.
-  - Designer l'interfface utilisateur de l'application.
+  - .
+  - .
   - .
 
 > [!NOTE]
@@ -55,6 +55,6 @@ Le Quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
 > - Mettre en évidence le score du joueur sur le tableau de fin et afficher son pseudo de manière evidente.
 > - Une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.
 > - Ajouter des sons.
-> - ajouter des difficulters.
-> - Ramdomiser les questions et les réponses
+> - Ajouter des difficultés.
+> - Randomiser les questions et les réponses
 > - Ajout d'une catégorie Logo.
