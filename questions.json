@@ -43,9 +43,16 @@
     },
     {
         "categorie": "Géographie",
-        "difficulte": "Difficile",
+        "difficulte": "Moyen",
         "question": "Quelle est la capitale de l'Australie ?",
         "reponses": ["Sydney", "Melbourne", "Canberra"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+        "reponses": ["Auckland", "Christchurch", "Wellington"],
         "bonne_reponse": 2
     },
     {
@@ -1202,5 +1209,103 @@
         "question": "Sur quel continent se trouve la Tanzanie ?",
         "reponses": ["Asie", "Afrique", "Europe"],
         "bonne_reponse": 1
-    }
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel pays a la plus grande superficie en Afrique ?",
+        "reponses": ["Algérie", "Soudan", "République Démocratique du Congo"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la plus grande île du monde ?",
+        "reponses": ["Madagascar", "Groenland", "Nouvelle-Guinée"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle ville est connue comme la 'ville éternelle' ?",
+        "reponses": ["Athènes", "Rome", "Istanbul"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Dans quel océan se trouve l'île de Pâques ?",
+        "reponses": ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le plus haut sommet de l'Afrique ?",
+        "reponses": ["Mont Kenya", "Mont Elgon", "Kilimandjaro"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel pays est traversé par le fleuve Yangtsé ?",
+        "reponses": ["Vietnam", "Chine", "Inde"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle chaîne de montagnes se trouve en Amérique du Sud ?",
+        "reponses": ["Les Alpes", "Les Andes", "Les Rocheuses"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le nom de la mer située entre l'Europe et l'Asie ?",
+        "reponses": ["Mer Méditerranée", "Mer Noire", "Mer Caspienne"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la capitale de l'Islande ?",
+        "reponses": ["Reykjavik", "Oslo", "Helsinki"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle ville est le siège des Nations Unies ?",
+        "reponses": ["Genève", "New York", "Bruxelles"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Dans quel pays se trouve la grande barrière de corail ?",
+        "reponses": ["États-Unis", "Australie", "Brésil"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la langue officielle du Brésil ?",
+        "reponses": ["Espagnol", "Portugais", "Anglais"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel océan se trouve l'archipel des Galápagos ?",
+        "reponses": ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la capitale de l'Argentine ?",
+        "reponses": ["Santiago", "Brasília", "Buenos Aires"],
+        "bonne_reponse": 2
+    }    
 ]
