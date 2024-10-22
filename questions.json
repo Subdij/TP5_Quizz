@@ -1580,5 +1580,26 @@
         "question": "Quel mouvement artistique et intellectuel a eu lieu en Europe au cours des XIVe et XVème siècles et a favorisé un retour aux sources de la culture classique ?",
         "reponses": ["Le Romantisme", "La Renaissance", "Le Baroque"],
         "bonne_reponse": 1
-    }              
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quelle civilisation ancienne a construit la ville de Tikal, au Guatemala ?",
+        "reponses": ["Les Aztèques", "Les Mayas", "Les Incas"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel empire a connu son apogée sous le règne de Gengis Khan au XIIIe siècle ?",
+        "reponses": ["L'Empire romain", "L'Empire ottoman", "L'Empire mongol"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Qui a écrit le manifeste du parti communiste en 1848 ?",
+        "reponses": ["Karl Marx", "Friedrich Engels", "Vladimir Lénine"],
+        "bonne_reponse": 0
+    }                  
 ]
