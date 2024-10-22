@@ -152,7 +152,7 @@ def afficher_bouton(texte, x, y, largeur, hauteur, couleur, hover_couleur, actio
         pygame.draw.rect(screen, hover_couleur, (x, y, largeur, hauteur), border_radius=50)
         if click[0] == 1 and action is not None:
             current_time = pygame.time.get_ticks()
-            if current_time - last_click_time > 200: 
+            if current_time - last_click_time > 100: 
                 last_click_time = current_time
                 action()
     else:
