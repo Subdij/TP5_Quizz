@@ -1307,5 +1307,299 @@
         "question": "Quelle est la capitale de l'Argentine ?",
         "reponses": ["Santiago", "Brasília", "Buenos Aires"],
         "bonne_reponse": 2
-    }    
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle ville est située à la fois en Europe et en Asie ?",
+        "reponses": ["Istanbul", "Moscou", "Téhéran"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le nom de la chaîne de montagnes qui sépare l'Europe de l'Asie ?",
+        "reponses": ["Les Alpes", "Les Pyrénées", "Les Oural"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale de la Mongolie ?",
+        "reponses": ["Oulan-Bator", "Ulan-Ude", "Tchita"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus petit pays du monde ?",
+        "reponses": ["Monaco", "Vatican", "Saint-Marin"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Dans quel pays se trouve le Mont Everest ?",
+        "reponses": ["Inde", "Népal", "Chine"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel pays est bordé par les océans Atlantique et Pacifique ?",
+        "reponses": ["Chili", "Argentine", "Pérou"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus grand archipel du monde ?",
+        "reponses": ["Les Philippines", "Les Maldives", "L'Indonésie"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel pays possède le plus grand nombre de frontières terrestres avec d'autres pays ?",
+        "reponses": ["Russie", "Chine", "Brésil"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle mer est la plus salée du monde ?",
+        "reponses": ["Mer Méditerranée", "Mer Morte", "Mer Rouge"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le nom du plus long tunnel sous-marin du monde ?",
+        "reponses": ["Tunnel sous la Manche", "Tunnel de Seikan", "Tunnel de Lærdal"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le point le plus bas de la surface terrestre ?",
+        "reponses": ["La Dépression de la mer Morte", "La Dépression de Challenger", "La Dépression de l'Atacama"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale du Bhoutan ?",
+        "reponses": ["Katmandou", "Thimphou", "Paro"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel océan est le plus profond du monde ?",
+        "reponses": ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus grand lac d'eau douce du monde par volume ?",
+        "reponses": ["Lac Supérieur", "Lac Baïkal", "Lac Victoria"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel événement a marqué le début de la Révolution française ?",
+        "reponses": ["La prise de la Bastille", "La Déclaration des droits de l'homme", "La fuite de Varennes"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui a été couronné empereur des Français en 1804 ?",
+        "reponses": ["Louis XVI", "Napoléon Bonaparte", "Charles de Gaulle"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel roi a construit le château de Versailles ?",
+        "reponses": ["Louis XIII", "Louis XIV", "Louis XV"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "En quelle année la Première Guerre mondiale a-t-elle commencé ?",
+        "reponses": ["1912", "1914", "1918"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui était le célèbre leader des droits civiques aux États-Unis, connu pour son discours \"I Have a Dream\" ?",
+        "reponses": ["Malcolm X", "Martin Luther King Jr.", "Rosa Parks"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel était le nom de la première mission spatiale habitée des États-Unis qui a réussi à atterrir sur la Lune ?",
+        "reponses": ["Apollo 11", "Apollo 13", "Gemini 4"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui a été le dernier tsar de Russie avant la révolution de 1917 ?",
+        "reponses": ["Nicolas II", "Alexandre III", "Pierre le Grand"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel pays a été le principal adversaire des États-Unis lors de la Guerre froide ?",
+        "reponses": ["La Chine", "L'Union soviétique", "Le Royaume-Uni"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel célèbre document a été signé le 4 juillet 1776 aux États-Unis ?",
+        "reponses": ["La Constitution", "La Déclaration d'indépendance", "Le Bill of Rights"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel empire était dirigé par Alexandre le Grand ?",
+        "reponses": ["L'Empire romain", "L'Empire perse", "L'Empire macédonien"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel était le nom de la première femme à recevoir le prix Nobel ?",
+        "reponses": ["Marie Curie", "Jane Addams", "Rosalind Franklin"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui a été le roi de France pendant la Révolution française ?",
+        "reponses": ["Louis XVI", "Louis XIV", "Louis XV"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quelle bataille a eu lieu en 1066, marquant la conquête normande de l'Angleterre ?",
+        "reponses": ["La bataille de Hastings", "La bataille de Waterloo", "La bataille de Bosworth"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Qui était le dirigeant soviétique pendant la crise des missiles de Cuba en 1962 ?",
+        "reponses": ["Léon Trotsky", "Joseph Staline", "Nikita Khrouchtchev"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quelle invention a permis à Martin Luther de diffuser ses idées réformistes au XVIe siècle ?",
+        "reponses": ["La presse à imprimer", "La boussole", "L'horloge"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel événement a déclenché la Révolution américaine en 1775 ?",
+        "reponses": ["La déclaration d'indépendance", "La Boston Tea Party", "La bataille de Lexington et Concord"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Qui a écrit la Déclaration d'indépendance des États-Unis en 1776 ?",
+        "reponses": ["George Washington", "Thomas Jefferson", "Benjamin Franklin"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel pharaon égyptien est connu pour sa tombe intacte découverte en 1922 ?",
+        "reponses": ["Ramsès II", "Toutankhamon", "Akhenaton"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel pays a été le premier à accorder le droit de vote aux femmes ?",
+        "reponses": ["Nouvelle-Zélande", "États-Unis", "France"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quelle guerre a opposé le Nord et le Sud des États-Unis ?",
+        "reponses": ["La guerre de Sécession", "La guerre d'indépendance", "La guerre de 1812"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel mouvement a été lancé par Martin Luther au XVIe siècle pour réformer l'Église catholique ?",
+        "reponses": ["La Contre-Réforme", "La Réforme", "Le Protestantisme"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel pays a été le premier à abolir l'esclavage en 1794 ?",
+        "reponses": ["France", "Royaume-Uni", "États-Unis"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel empereur romain a régné pendant le début de l'ère chrétienne ?",
+        "reponses": ["Auguste", "Néron", "Caligula"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Qui a été le leader des Bolcheviks lors de la Révolution d'Octobre en 1917 ?",
+        "reponses": ["Staline", "Lénine", "Trotsky"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Moyen",
+        "question": "Quel mouvement artistique et intellectuel a eu lieu en Europe au cours des XIVe et XVème siècles et a favorisé un retour aux sources de la culture classique ?",
+        "reponses": ["Le Romantisme", "La Renaissance", "Le Baroque"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quelle civilisation ancienne a construit la ville de Tikal, au Guatemala ?",
+        "reponses": ["Les Aztèques", "Les Mayas", "Les Incas"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel empire a connu son apogée sous le règne de Gengis Khan au XIIIe siècle ?",
+        "reponses": ["L'Empire romain", "L'Empire ottoman", "L'Empire mongol"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Qui a écrit le manifeste du parti communiste en 1848 ?",
+        "reponses": ["Karl Marx", "Friedrich Engels", "Vladimir Lénine"],
+        "bonne_reponse": 0
+    }                  
 ]

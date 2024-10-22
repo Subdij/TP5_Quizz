@@ -401,18 +401,21 @@ while running:
 
         # Afficher le score
         afficher_texte("Score: " + str(score), SCREEN_WIDTH - 150, 20, WHITE)
+
+        # Afficher la streak
+        afficher_texte("Streak: " + str(streak), SCREEN_WIDTH - 150, 50, WHITE)
         
         # Calculer le temps restant pour la question
         seconds = (pygame.time.get_ticks() - start_ticks) // 1000
         temps_question = max(10 - seconds, 0)
-        afficher_texte("Temps restant: " + str(temps_question), 20, 20, RED)
+        afficher_texte("Temps restant: " + str(temps_question), 20, 50, RED)
 
         # Calculer le temps global restant
         seconds_global = (pygame.time.get_ticks() - start_ticks_global) // 1000
         temps_global = max(60 - seconds_global, 0)
         if streak>3:    # Vérifier si le joueur a répondu correctement à plus de 3 questions d'affilée
             temps_global += streak-3    # On ajoute x secondes au timer global en fonction du nombre de bonnes réponses qui dépassent 3 (ex: 1 seconde pour streak de 4,...)
-        afficher_texte("Temps global: " + str(temps_global), 20, 50, RED)
+        afficher_texte("Temps global: " + str(temps_global), 20, 20, RED)
 
         # Vérifier que la liste des questions n'est pas vide
         if questions:
