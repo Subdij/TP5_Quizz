@@ -43,9 +43,16 @@
     },
     {
         "categorie": "Géographie",
-        "difficulte": "Difficile",
+        "difficulte": "Moyen",
         "question": "Quelle est la capitale de l'Australie ?",
         "reponses": ["Sydney", "Melbourne", "Canberra"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+        "reponses": ["Auckland", "Christchurch", "Wellington"],
         "bonne_reponse": 2
     },
     {
@@ -887,5 +894,418 @@
         "question": "Quel mur symbolisait la division entre l'Est et l'Ouest pendant la Guerre froide ?",
         "reponses": ["Le mur de Berlin", "Le mur de Chine", "Le mur des lamentations"],
         "bonne_reponse": 0
-    }
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel roi français est connu sous le surnom de 'Le Roi Soleil' ?",
+        "reponses": ["Louis XIV", "François Ier", "Henri IV"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le pays le plus peuplé du monde ?",
+        "reponses": ["Inde", "Chine", "États-Unis"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle mer borde les côtes de la Jordanie, d'Israël et de l'Arabie Saoudite ?",
+        "reponses": ["La mer Rouge", "La mer Noire", "La mer Méditerranée"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel est l'élément chimique représenté par le symbole 'O' ?",
+        "reponses": ["Oxygène", "Or", "Osmium"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle planète est la plus grande du système solaire ?",
+        "reponses": ["Jupiter", "Saturne", "Uranus"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Quel mouvement artistique est associé à l'artiste Salvador Dalí ?",
+        "reponses": ["Le surréalisme", "Le cubisme", "Le symbolisme"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Dans quelle ville se trouve le musée du Prado, l'un des plus célèbres musées d'art au monde ?",
+        "reponses": ["Madrid", "Paris", "Rome"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Facile",
+        "question": "Quel groupe britannique a composé 'Bohemian Rhapsody' ?",
+        "reponses": ["Queen", "The Beatles", "The Rolling Stones"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Moyen",
+        "question": "Quelle symphonie de Beethoven est connue sous le nom de 'Symphonie Héroïque' ?",
+        "reponses": ["La 3e symphonie", "La 5e symphonie", "La 9e symphonie"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur allemand est l'auteur de l'opéra 'L'Or du Rhin' ?",
+        "reponses": ["Richard Wagner", "Johannes Brahms", "Franz Schubert"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Combien de joueurs compte une équipe de basketball sur le terrain ?",
+        "reponses": ["5", "6", "7"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Difficile",
+        "question": "Dans quel pays ont eu lieu les premiers Jeux Olympiques modernes en 1896 ?",
+        "reponses": ["Grèce", "France", "États-Unis"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel réalisateur a créé le film 'Titanic' en 1997 ?",
+        "reponses": ["James Cameron", "Steven Spielberg", "Martin Scorsese"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Moyen",
+        "question": "Dans quel film trouve-t-on le personnage de Neo, interprété par Keanu Reeves ?",
+        "reponses": ["Matrix", "Inception", "Terminator"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel réalisateur a réalisé 'Rashomon', un film de 1950 connu pour sa narration complexe ?",
+        "reponses": ["Akira Kurosawa", "Yasujiro Ozu", "Kenji Mizoguchi"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui était le premier empereur de Rome ?",
+        "reponses": ["Jules César", "Auguste", "Néron"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Difficile",
+        "question": "Quel traité de paix a mis fin à la guerre de Trente Ans en 1648 ?",
+        "reponses": ["Le traité de Westphalie", "Le traité de Vienne", "Le traité d'Aix-la-Chapelle"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle chaîne de montagnes sépare la France et l'Espagne ?",
+        "reponses": ["Les Alpes", "Les Pyrénées", "Les Apennins"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale du Kazakhstan ?",
+        "reponses": ["Almaty", "Astana", "Bichkek"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Combien de planètes composent le système solaire ?",
+        "reponses": ["7", "8", "9"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Qui a découvert la radioactivité ?",
+        "reponses": ["Marie Curie", "Albert Einstein", "Isaac Newton"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Difficile",
+        "question": "Quel est le nom de la première sonde spatiale à avoir survolé Pluton en 2015 ?",
+        "reponses": ["New Horizons", "Voyager 1", "Cassini"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Moyen",
+        "question": "Dans quelle ville italienne se trouve la galerie des Offices, célèbre pour ses œuvres de la Renaissance ?",
+        "reponses": ["Rome", "Venise", "Florence"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Art",
+        "difficulte": "Difficile",
+        "question": "Quel peintre italien a réalisé la fresque L'École d'Athènes au Vatican ?",
+        "reponses": ["Michel-Ange", "Raphaël", "Sandro Botticelli"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Moyen",
+        "question": "Quel compositeur autrichien est l'auteur de la Messe en ut mineur ?",
+        "reponses": ["Joseph Haydn", "Wolfgang Amadeus Mozart", "Franz Schubert"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Musique",
+        "difficulte": "Difficile",
+        "question": "Quel compositeur russe a écrit le ballet Casse-Noisette ?",
+        "reponses": ["Igor Stravinsky", "Modeste Moussorgski", "Piotr Ilitch Tchaïkovski"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Difficile",
+        "question": "Quel footballeur argentin est surnommé 'El Pibe de Oro' ?",
+        "reponses": ["Diego Maradona", "Lionel Messi", "Gabriel Batistuta"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Facile",
+        "question": "Quel film de 1994 a révélé l’acteur Tim Robbins et raconte l’évasion d’un prisonnier ?",
+        "reponses": ["Les Évadés", "Forrest Gump", "Pulp Fiction"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Cinéma",
+        "difficulte": "Difficile",
+        "question": "Quel réalisateur a remporté la Palme d'or au Festival de Cannes en 1976 pour Taxi Driver ?",
+        "reponses": ["Martin Scorsese", "Francis Ford Coppola", "Roman Polanski"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle est la capitale de l'Espagne ?",
+        "reponses": ["Barcelone", "Madrid", "Séville"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel océan borde les côtes de la Californie ?",
+        "reponses": ["L'océan Atlantique", "L'océan Pacifique", "L'océan Indien"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel pays est surnommé 'le pays du Soleil-Levant' ?",
+        "reponses": ["La Chine", "Le Japon", "La Corée du Sud"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel est le plus grand continent en termes de superficie ?",
+        "reponses": ["L'Afrique", "L'Asie", "L'Amérique du Nord"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle ville est surnommée 'la Grosse Pomme' ?",
+        "reponses": ["Londres", "Paris", "New York"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Dans quel pays se trouvent les chutes du Niagara ?",
+        "reponses": ["États-Unis et Canada", "Mexique", "Brésil"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel pays est célèbre pour ses kangourous ?",
+        "reponses": ["Nouvelle-Zélande", "Australie", "Afrique du Sud"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel pays forme la plus grande partie de l'Amérique du Sud ?",
+        "reponses": ["Argentine", "Brésil", "Colombie"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle est la capitale de l'Australie ?",
+        "reponses": ["Sydney", "Canberra", "Melbourne"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel océan borde la côte est des États-Unis ?",
+        "reponses": ["Océan Pacifique", "Océan Indien", "Océan Atlantique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel fleuve traverse la ville de Londres ?",
+        "reponses": ["La Tamise", "Le Danube", "Le Rhin"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Dans quel pays se trouvent les fjords célèbres ?",
+        "reponses": ["Suède", "Norvège", "Finlande"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle est la capitale de l'Italie ?",
+        "reponses": ["Rome", "Milan", "Florence"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quelle est la capitale du Canada ?",
+        "reponses": ["Ottawa", "Toronto", "Vancouver"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Quel pays est surnommé 'le pays des mille lacs' ?",
+        "reponses": ["Finlande", "Suède", "Norvège"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Facile",
+        "question": "Sur quel continent se trouve la Tanzanie ?",
+        "reponses": ["Asie", "Afrique", "Europe"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel pays a la plus grande superficie en Afrique ?",
+        "reponses": ["Algérie", "Soudan", "République Démocratique du Congo"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la plus grande île du monde ?",
+        "reponses": ["Madagascar", "Groenland", "Nouvelle-Guinée"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle ville est connue comme la 'ville éternelle' ?",
+        "reponses": ["Athènes", "Rome", "Istanbul"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Dans quel océan se trouve l'île de Pâques ?",
+        "reponses": ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le plus haut sommet de l'Afrique ?",
+        "reponses": ["Mont Kenya", "Mont Elgon", "Kilimandjaro"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel pays est traversé par le fleuve Yangtsé ?",
+        "reponses": ["Vietnam", "Chine", "Inde"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle chaîne de montagnes se trouve en Amérique du Sud ?",
+        "reponses": ["Les Alpes", "Les Andes", "Les Rocheuses"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel est le nom de la mer située entre l'Europe et l'Asie ?",
+        "reponses": ["Mer Méditerranée", "Mer Noire", "Mer Caspienne"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la capitale de l'Islande ?",
+        "reponses": ["Reykjavik", "Oslo", "Helsinki"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle ville est le siège des Nations Unies ?",
+        "reponses": ["Genève", "New York", "Bruxelles"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Dans quel pays se trouve la grande barrière de corail ?",
+        "reponses": ["États-Unis", "Australie", "Brésil"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la langue officielle du Brésil ?",
+        "reponses": ["Espagnol", "Portugais", "Anglais"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quel océan se trouve l'archipel des Galápagos ?",
+        "reponses": ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Moyen",
+        "question": "Quelle est la capitale de l'Argentine ?",
+        "reponses": ["Santiago", "Brasília", "Buenos Aires"],
+        "bonne_reponse": 2
+    }    
 ]
