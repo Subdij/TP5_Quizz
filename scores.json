@@ -34,6 +34,14 @@
     {
         "pseudo": "ines",
         "categorie": [
+            "Sport"
+        ],
+        "difficulte": "Moyen",
+        "score": 56
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
             "Histoire"
         ],
         "difficulte": "Facile",
@@ -54,6 +62,14 @@
         ],
         "difficulte": "Facile",
         "score": 52
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 48
     },
     {
         "pseudo": "ines",
