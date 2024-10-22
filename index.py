@@ -1,3 +1,4 @@
+import os
 import pygame
 import json
 import random
@@ -45,20 +46,22 @@ temps_question = 10  # Temps restant pour chaque question
 streak = 0  # "Compteur" de bonnes réponses d'affilée, afin d'activer des bonus de temps
 
 # Charger les images de fond
-background_image_accueil = pygame.image.load(r'images\score.jpg')
+background_image_accueil = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_accueil = pygame.transform.scale(background_image_accueil, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_pseudo = pygame.image.load(r'images\score.jpg')
+background_image_pseudo = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_pseudo = pygame.transform.scale(background_image_pseudo, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_difficulte = pygame.image.load(r'images\score.jpg')
+background_image_difficulte = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_difficulte = pygame.transform.scale(background_image_difficulte, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_categorie = pygame.image.load(r'images\score.jpg')
+background_image_categorie = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_categorie = pygame.transform.scale(background_image_categorie, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_score = pygame.image.load(r'images\score.jpg')
+background_image_score = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+# Le reste de votre code...
 
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges
