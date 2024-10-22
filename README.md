@@ -52,14 +52,16 @@ Le quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
   - .
 
 > [!NOTE]
-> ### Fonctionnalités avancées :
+> ### Liste des fonctionnalités avancées / idées :
 > - Ajouter un bouton pour le classement sur l'écran d'accueil.
 > - Mettre en évidence le score du joueur sur le tableau de fin et afficher son pseudo de manière évidente.
-> - Une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.
+> - Ajouter une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.
 > - Ajouter des sons.
-> - Ajouter des difficultés.
+> - Ajouter des niveaux de difficulté.
 > - Randomiser les questions et les réponses.
 > - Ajouter une catégorie Logo.
 > - Ajouter un système de streak.
-> - Plusieurs catégories sélectionnables.
-> - Bonus de points en fonction du temps écoulé et de la difficulté.
+> - Ajouter plusieurs catégories sélectionnables.
+> - Ajouter des bonus de points en fonction du temps écoulé et de la difficulté.
+> - Ajouter un système de surbrillance pour le dernier pseudo enregistré dans le score.
+> - Ajouter un système de tri dans le classement des joueurs par difficulté et par catégorie.
