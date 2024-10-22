@@ -1405,5 +1405,89 @@
         "question": "Quel est le plus grand lac d'eau douce du monde par volume ?",
         "reponses": ["Lac Supérieur", "Lac Baïkal", "Lac Victoria"],
         "bonne_reponse": 1
-    }    
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel événement a marqué le début de la Révolution française ?",
+        "reponses": ["La prise de la Bastille", "La Déclaration des droits de l'homme", "La fuite de Varennes"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui a été couronné empereur des Français en 1804 ?",
+        "reponses": ["Louis XVI", "Napoléon Bonaparte", "Charles de Gaulle"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel roi a construit le château de Versailles ?",
+        "reponses": ["Louis XIII", "Louis XIV", "Louis XV"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "En quelle année la Première Guerre mondiale a-t-elle commencé ?",
+        "reponses": ["1912", "1914", "1918"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui était le célèbre leader des droits civiques aux États-Unis, connu pour son discours \"I Have a Dream\" ?",
+        "reponses": ["Malcolm X", "Martin Luther King Jr.", "Rosa Parks"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel était le nom de la première mission spatiale habitée des États-Unis qui a réussi à atterrir sur la Lune ?",
+        "reponses": ["Apollo 11", "Apollo 13", "Gemini 4"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui a été le dernier tsar de Russie avant la révolution de 1917 ?",
+        "reponses": ["Nicolas II", "Alexandre III", "Pierre le Grand"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel pays a été le principal adversaire des États-Unis lors de la Guerre froide ?",
+        "reponses": ["La Chine", "L'Union soviétique", "Le Royaume-Uni"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel célèbre document a été signé le 4 juillet 1776 aux États-Unis ?",
+        "reponses": ["La Constitution", "La Déclaration d'indépendance", "Le Bill of Rights"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel empire était dirigé par Alexandre le Grand ?",
+        "reponses": ["L'Empire romain", "L'Empire perse", "L'Empire macédonien"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel était le nom de la première femme à recevoir le prix Nobel ?",
+        "reponses": ["Marie Curie", "Jane Addams", "Rosalind Franklin"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Qui a été le roi de France pendant la Révolution française ?",
+        "reponses": ["Louis XVI", "Louis XIV", "Louis XV"],
+        "bonne_reponse": 0
+    }        
 ]
