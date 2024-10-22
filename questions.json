@@ -880,5 +880,12 @@
         "question": "Quel film de Stanley Kubrick raconte une odyssée dans l’espace ?",
         "reponses": ["2001, l'Odyssée de l'espace", "Orange mécanique", "Shining"],
         "bonne_reponse": 0
+    },
+    {
+        "categorie": "Histoire",
+        "difficulte": "Facile",
+        "question": "Quel mur symbolisait la division entre l'Est et l'Ouest pendant la Guerre froide ?",
+        "reponses": ["Le mur de Berlin", "Le mur de Chine", "Le mur des lamentations"],
+        "bonne_reponse": 0
     }
 ]

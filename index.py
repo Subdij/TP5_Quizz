@@ -250,12 +250,10 @@ def afficher_page_score():
 # Fonction pour changer de page
 def changer_page(nouvelle_page):
     global page
+    if nouvelle_page == "accueil":
+        reinitialiser_jeu()
     page = nouvelle_page
 
-# Fonction pour changer de page
-def changer_page(nouvelle_page):
-    global page
-    page = nouvelle_page
 
 # Fonction pour changer la page de score
 def changer_page_score(direction):
