@@ -1,9 +1,94 @@
 [
     {
+        "pseudo": "dd",
+        "categorie": [
+            "Géographie",
+            "Science",
+            "Sport",
+            "Histoire"
+        ],
+        "difficulte": "Difficile",
+        "score": 212
+    },
+    {
+        "pseudo": "god king",
+        "categorie": [
+            "Géographie",
+            "Science",
+            "Sport",
+            "Histoire"
+        ],
+        "difficulte": "Difficile",
+        "score": 196
+    },
+    {
+        "pseudo": "God Usopp",
+        "categorie": [
+            "Géographie",
+            "Sport",
+            "Science",
+            "Histoire"
+        ],
+        "difficulte": "Difficile",
+        "score": 152
+    },
+    {
+        "pseudo": "God",
+        "categorie": [
+            "Histoire",
+            "Sport",
+            "Science",
+            "Géographie"
+        ],
+        "difficulte": "Difficile",
+        "score": 96
+    },
+    {
+        "pseudo": "ni",
+        "categorie": [
+            "Histoire",
+            "Sport",
+            "Science",
+            "Géographie"
+        ],
+        "difficulte": "Facile",
+        "score": 37
+    },
+    {
+        "pseudo": "Sun God Nika",
+        "categorie": [
+            "Géographie",
+            "Sport",
+            "Science",
+            "Histoire"
+        ],
+        "difficulte": "Facile",
+        "score": 33
+    },
+    {
+        "pseudo": "dd",
+        "categorie": [
+            "Géographie"
+        ],
+        "difficulte": "Moyen",
+        "score": 22
+    },
+    {
         "pseudo": "subdij",
         "categorie": "Géographie",
         "difficulte": "Moyen",
         "score": 18
+    },
+    {
+        "pseudo": "cc",
+        "categorie": [
+            "Histoire",
+            "Sport",
+            "Science",
+            "Géographie"
+        ],
+        "difficulte": "Facile",
+        "score": 5
     },
     {
         "pseudo": "ziyad",
@@ -160,5 +245,62 @@
         "categorie": "Géographie",
         "difficulte": "Facile",
         "score": 1
+    },
+    {
+        "pseudo": "Nika\r\r\r\r\r*",
+        "categorie": [
+            "Sport"
+        ],
+        "difficulte": "Facile",
+        "score": 0
+    },
+    {
+        "pseudo": "nik",
+        "categorie": [
+            "Sport"
+        ],
+        "difficulte": "Facile",
+        "score": 0
+    },
+    {
+        "pseudo": "222\r",
+        "categorie": [
+            "Histoire",
+            "Sport",
+            "Science",
+            "Géographie"
+        ],
+        "difficulte": "Facile",
+        "score": 0
+    },
+    {
+        "pseudo": "11",
+        "categorie": [
+            "Histoire",
+            "Sport",
+            "Science",
+            "Géographie"
+        ],
+        "difficulte": "Facile",
+        "score": 0
+    },
+    {
+        "pseudo": "ww",
+        "categorie": [
+            "Histoire",
+            "Sport",
+            "Science",
+            "Géographie"
+        ],
+        "difficulte": "Moyen",
+        "score": 0
+    },
+    {
+        "pseudo": "gg",
+        "categorie": [
+            "Géographie"
+        ],
+        "difficulte": "Moyen",
+        "score": 0
     }
 ]
