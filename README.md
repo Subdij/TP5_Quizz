@@ -1,5 +1,6 @@
 Fonctionnalités avancées :
 
+- INTERFACE !!!!!!!!!!!!!!!!!!!!!!!!!
 - Mettre en évidence le score du joueur sur le tableau de fin et afficher son pseudo de manière evidente.
 - Une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.
 - Ajouter des sons.
