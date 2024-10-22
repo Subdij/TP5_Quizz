@@ -1307,5 +1307,103 @@
         "question": "Quelle est la capitale de l'Argentine ?",
         "reponses": ["Santiago", "Brasília", "Buenos Aires"],
         "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle ville est située à la fois en Europe et en Asie ?",
+        "reponses": ["Istanbul", "Moscou", "Téhéran"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le nom de la chaîne de montagnes qui sépare l'Europe de l'Asie ?",
+        "reponses": ["Les Alpes", "Les Pyrénées", "Les Oural"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale de la Mongolie ?",
+        "reponses": ["Oulan-Bator", "Ulan-Ude", "Tchita"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus petit pays du monde ?",
+        "reponses": ["Monaco", "Vatican", "Saint-Marin"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Dans quel pays se trouve le Mont Everest ?",
+        "reponses": ["Inde", "Népal", "Chine"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel pays est bordé par les océans Atlantique et Pacifique ?",
+        "reponses": ["Chili", "Argentine", "Pérou"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus grand archipel du monde ?",
+        "reponses": ["Les Philippines", "Les Maldives", "L'Indonésie"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel pays possède le plus grand nombre de frontières terrestres avec d'autres pays ?",
+        "reponses": ["Russie", "Chine", "Brésil"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle mer est la plus salée du monde ?",
+        "reponses": ["Mer Méditerranée", "Mer Morte", "Mer Rouge"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le nom du plus long tunnel sous-marin du monde ?",
+        "reponses": ["Tunnel sous la Manche", "Tunnel de Seikan", "Tunnel de Lærdal"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le point le plus bas de la surface terrestre ?",
+        "reponses": ["La Dépression de la mer Morte", "La Dépression de Challenger", "La Dépression de l'Atacama"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quelle est la capitale du Bhoutan ?",
+        "reponses": ["Katmandou", "Thimphou", "Paro"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel océan est le plus profond du monde ?",
+        "reponses": ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Géographie",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus grand lac d'eau douce du monde par volume ?",
+        "reponses": ["Lac Supérieur", "Lac Baïkal", "Lac Victoria"],
+        "bonne_reponse": 1
     }    
 ]
