@@ -18,7 +18,7 @@ HOVER_COLOR = (100, 100, 255)
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Quiz Pygame")
+pygame.display.set_caption("QuizDown")
 
 # Police
 font = pygame.font.Font(None, 36)
