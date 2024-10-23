@@ -6,6 +6,14 @@
         "score": 18
     },
     {
+        "pseudo": "dfg",
+        "categorie": [
+            "Cinéma"
+        ],
+        "difficulte": "Facile",
+        "score": 16
+    },
+    {
         "pseudo": "ziyad",
         "categorie": "Géographie",
         "difficulte": "Facile",
@@ -27,7 +35,7 @@
         "pseudo": "daddy",
         "categorie": "Géographie",
         "difficulte": "Facile",
-        "score": 3 
+        "score": 3
     },
     {
         "pseudo": "hjsrhesrthg",
@@ -160,5 +168,13 @@
         "categorie": "Géographie",
         "difficulte": "Facile",
         "score": 1
+    },
+    {
+        "pseudo": "nihel",
+        "categorie": [
+            "Géographie"
+        ],
+        "difficulte": "Moyen",
+        "score": 0
     }
 ]
