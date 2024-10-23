@@ -42,9 +42,9 @@ Le quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
   - .
 
 - **Nihel** :
-  - .
-  - .
-  - .
+  - .recherche des questions 
+  - .choix des questions
+  - .développement du technologie avancé du music 
 
 - **Nicolas** :
   - .
