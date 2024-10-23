@@ -1699,7 +1699,122 @@
         "question": "Quel animal est connu pour sa capacité à changer de couleur pour se camoufler ?",
         "reponses": ["Le caméléon", "Le lézard", "La grenouille"],
         "bonne_reponse": 0
-    }
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est l'élément chimique le plus abondant dans l'univers ?",
+        "reponses": ["Oxygène", "Hydrogène", "Carbone"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est l'organe du corps humain qui produit l'insuline ?",
+        "reponses": ["Le foie", "Le pancréas", "Le rein"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le premier homme à avoir marché sur la Lune en 1969 ?",
+        "reponses": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Comment s'appelle l'étude des champignons ?",
+        "reponses": ["L'ornithologie", "La mycologie", "L'entomologie"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est l'unité de mesure de la fréquence d'un son ?",
+        "reponses": ["Hertz", "Joule", "Newton"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Dans quelle partie de la cellule trouve-t-on l'ADN ?",
+        "reponses": ["Le cytoplasme", "Le noyau", "La membrane"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le métal le plus léger ?",
+        "reponses": ["Aluminium", "Lithium", "Magnésium"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Comment appelle-t-on un changement de l'état solide à l'état gazeux, sans passer par l'état liquide ?",
+        "reponses": ["Fusion", "Sublimation", "Condensation"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est l'unité de mesure de l'intensité du courant électrique ?",
+        "reponses": ["Volt", "Ampère", "Watt"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel phénomène naturel est mesuré par l'échelle de Richter ?",
+        "reponses": ["La température", "La magnitude des tremblements de terre", "La pression atmosphérique"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est la planète la plus chaude du système solaire ?",
+        "reponses": ["Vénus", "Mercure", "Mars"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le plus grand organe du corps humain ?",
+        "reponses": ["Le foie", "Le cœur", "La peau"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle loi de la physique stipule que la force est égale à la masse multipliée par l'accélération ?",
+        "reponses": ["La loi de la gravitation", "La deuxième loi de Newton", "La loi d'Ohm"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est la vitesse de la lumière dans le vide ?",
+        "reponses": ["300 000 km/s", "150 000 km/s", "400 000 km/s"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus gros os du corps humain ?",
+        "reponses": ["Humérus", "Fémur", "Tibia"],
+        "bonne_reponse": 1
+      },
+      {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le métal liquide à température ambiante ?",
+        "reponses": ["Mercure", "Fer", "Plomb"],
+        "bonne_reponse": 0
+      }
+      
+    
+    
     
                      
 ]
