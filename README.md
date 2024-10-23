@@ -23,7 +23,7 @@ Le quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
 > [!NOTE]
 > ### Liste des fonctionnalités avancées / idées :
 > - Ajouter un bouton pour le classement sur l'écran d'accueil. ✅
-> - Mettre en évidence le score du joueur sur le tableau de fin et afficher son pseudo de manière évidente.❌
+> - Mettre en évidence le score du joueur sur le tableau de fin et afficher son pseudo de manière évidente.✅
 > - Ajouter une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.❌
 > - Ajouter des sons. ❌
 > - Ajouter des niveaux de difficulté.✅
@@ -32,5 +32,4 @@ Le quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
 > - Ajouter un système de streak.✅
 > - Ajouter plusieurs catégories sélectionnables.✅
 > - Ajouter des bonus de points en fonction du temps écoulé et de la difficulté.✅
-> - Ajouter un système de surbrillance pour le dernier pseudo enregistré dans le score.❌
-> - Ajouter un système de tri dans le classement des joueurs par difficulté et par catégorie.❌
+> - Ajouter un système de tri dans le classement des joueurs par difficulté et par catégorie.✅
