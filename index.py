@@ -1,3 +1,4 @@
+import os
 import pygame
 import json
 import os
@@ -48,8 +49,14 @@ scores = charger_scores()  # Charger les scores au début
 # Fonction pour afficher le texte
 def afficher_texte(texte, x, y, couleur, taille=32):
     font = pygame.font.Font(None, taille)
-    text_surface = font.render(texte, True, couleur)
-    screen.blit(text_surface, (x, y))
+    if max_width:
+        lines = render_text_wrapped(texte, font, max_width)
+        for i, line in enumerate(lines):
+            text_surface = font.render(line, True, couleur)
+            screen.blit(text_surface, (x, y + i * taille))
+    else:
+        text_surface = font.render(texte, True, couleur)
+        screen.blit(text_surface, (x, y))
 
 # Fonction pour afficher les boutons
 def afficher_bouton(texte, x, y, largeur, hauteur, couleur, action=None):
@@ -75,9 +82,7 @@ def changer_page_score(delta):
 def afficher_page_score():
     global page, score_page
     page = "score"
-    
-    # Afficher l'image de fond
-    screen.blit(background_image, (0, 0))
+    screen.blit(background_image_score, (0, 0))
     
     afficher_texte("Scores", SCREEN_WIDTH // 2 - 50, 70, WHITE, taille=48)
     
@@ -99,12 +104,22 @@ def afficher_page_score():
     
     # Afficher les boutons de navigation
     if score_page > 0:
-        afficher_bouton("Précédent", 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, lambda: changer_page_score(-1))
+        afficher_bouton("Précédent", 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page_score(-1))
     
     if end_index < len(scores):
-        afficher_bouton("Suivant", SCREEN_WIDTH - 300, SCREEN_HEIGHT - 100, 200, 50, BLUE, lambda: changer_page_score(1))
+        afficher_bouton("Suivant", SCREEN_WIDTH - 300, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page_score(1))
     
-    afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, reinitialiser_jeu)
+    afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, reinitialiser_jeu)
+    
+    afficher_bouton("Accueil", 70, 60, 230, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
+
+# Fonction pour changer de page
+def changer_page(nouvelle_page):
+    global page
+    if nouvelle_page == "accueil":
+        reinitialiser_jeu()
+    page = nouvelle_page
+
 
 # Fonction principale
 def main():

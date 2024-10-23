@@ -1,180 +1,146 @@
 [
     {
-        "pseudo": "subdij",
-        "categorie": "Géographie",
-        "difficulte": "Moyen",
-        "score": 18
+        "pseudo": "facile5",
+        "categorie": [
+            "Art"
+        ],
+        "difficulte": "Facile",
+        "score": 114
     },
     {
-        "pseudo": "dfg",
+        "pseudo": "test",
+        "categorie": [
+            "Art"
+        ],
+        "difficulte": "Facile",
+        "score": 66
+    },
+    {
+        "pseudo": "facile3",
         "categorie": [
             "Cinéma"
         ],
         "difficulte": "Facile",
-        "score": 16
+        "score": 61
     },
     {
-        "pseudo": "ziyad",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 3
-    },
-    {
-        "pseudo": "dady",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 3
-    },
-    {
-        "pseudo": "didou",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 3
-    },
-    {
-        "pseudo": "daddy",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 3
-    },
-    {
-        "pseudo": "hjsrhesrthg",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "dady",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "sdfsdfsdf",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "sdfsddfsdf",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsdqsdqd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qfgqzerg",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "sdqsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsdqsqds",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "dfgdfgdfg",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "oaziuhdçzouef",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "zçeiuih",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "dfgjhhj",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 2
-    },
-    {
-        "pseudo": "qsdqsdd",
-        "categorie": "Géographie",
-        "difficulte": "Facile",
-        "score": 1
-    },
-    {
-        "pseudo": "nihel",
+        "pseudo": "facile7",
         "categorie": [
-            "Géographie"
+            "Histoire"
+        ],
+        "difficulte": "Facile",
+        "score": 60
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Sport"
         ],
         "difficulte": "Moyen",
-        "score": 0
+        "score": 56
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Histoire"
+        ],
+        "difficulte": "Facile",
+        "score": 55
+    },
+    {
+        "pseudo": "iness",
+        "categorie": [
+            "Histoire"
+        ],
+        "difficulte": "Facile",
+        "score": 54
+    },
+    {
+        "pseudo": "facile6",
+        "categorie": [
+            "Musique"
+        ],
+        "difficulte": "Facile",
+        "score": 52
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 48
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Histoire"
+        ],
+        "difficulte": "Facile",
+        "score": 45
+    },
+    {
+        "pseudo": "facile2",
+        "categorie": [
+            "Cinéma"
+        ],
+        "difficulte": "Facile",
+        "score": 39
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 39
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 39
+    },
+    {
+        "pseudo": "facile1",
+        "categorie": [
+            "Cinéma"
+        ],
+        "difficulte": "Facile",
+        "score": 37
+    },
+    {
+        "pseudo": "lena",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Moyen",
+        "score": 30
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 30
+    },
+    {
+        "pseudo": "facile4",
+        "categorie": [
+            "Art"
+        ],
+        "difficulte": "Facile",
+        "score": 28
+    },
+    {
+        "pseudo": "ines",
+        "categorie": [
+            "Science"
+        ],
+        "difficulte": "Facile",
+        "score": 28
     }
 ]
