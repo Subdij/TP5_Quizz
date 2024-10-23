@@ -20,37 +20,6 @@ Le quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
 - **Nihel** : Responsable du développement d'idées de questions et du développement des fonctionnalités.
 - **Nicolas** : Responsable du design de l'application et de son intégration.
 
-### Description des Tâches
-
-- **Ziyad** :
-  - Conception de l'architecture du projet.
-  - Intégration des différentes fonctionnalités.
-  - Supervision du développement global.
-  - Création du système de scoring.
-  - Création du système question-réponse.
-  - Création du système de sélection de plusieurs catégories.
-  - Création du système de bonus de points en fonction du temps écoulé et de la difficulté.
-
-- **Inès** :
-  - Développement des questions du quiz.
-  - Création du système de streak (de l'idée à la mise en place).
-  - Gestion et tests des interactions joueur et débogage.
-
-- **Yassine** :
-  - .
-  - .
-  - .
-
-- **Nihel** :
-  - .
-  - .
-  - .
-
-- **Nicolas** :
-  - .
-  - .
-  - .
-
 > [!NOTE]
 > ### Liste des fonctionnalités avancées / idées :
 > - Ajouter un bouton pour le classement sur l'écran d'accueil. ✅
