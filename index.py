@@ -62,8 +62,9 @@ background_image_score = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def reinitialiser_jeu():
-    global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges
+    global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges, streak
     score = 0
+    streak = 0
     temps_restant = 30
     question_actuelle = 0
     pseudo = ""

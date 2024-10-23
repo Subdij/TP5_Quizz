@@ -129,7 +129,7 @@
         "categorie": "Science",
         "difficulte": "Moyenne",
         "question": "Quel est l'organe principal du système nerveux humain ?",
-        "reponses": ["Le cœur", "Le foie", "Le cerveau"],
+        "reponses": ["Les nerfs", "La moelle épinière", "Le cerveau"],
         "bonne_reponse": 2
     },    
     {
@@ -779,8 +779,8 @@
     {
         "categorie": "Géographie",
         "difficulte": "Facile",
-        "question": "Quelle est la capitale de l'Italie ?",
-        "reponses": ["Rome", "Venise", "Florence"],
+        "question": "Quelle est la capitale de la Belgique ?",
+        "reponses": ["Bruxelles", "Mons", "Bruges"],
         "bonne_reponse": 0
     },
     {
@@ -1601,5 +1601,220 @@
         "question": "Qui a écrit le manifeste du parti communiste en 1848 ?",
         "reponses": ["Karl Marx", "Friedrich Engels", "Vladimir Lénine"],
         "bonne_reponse": 0
-    }                  
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel est l'organe responsable de la respiration chez l'homme ?",
+        "reponses": ["Le cœur", "Le foie", "Les poumons"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel est le plus grand mammifère terrestre ?",
+        "reponses": ["L'éléphant", "La girafe", "Le rhinocéros"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel est l'état de la matière de l'eau à 0°C ?",
+        "reponses": ["Solide", "Liquide", "Gaz"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quelle partie de la plante est généralement responsable de la photosynthèse ?",
+        "reponses": ["La racine", "La tige", "La feuille"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel est l'organe responsable de la digestion des aliments ?",
+        "reponses": ["L'estomac", "Le foie", "L'intestin grêle"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel phénomène décrit le passage de l'état liquide à l'état gazeux ?",
+        "reponses": ["La condensation", "L'évaporation", "La fusion"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quelle planète est la plus proche du Soleil ?",
+        "reponses": ["Vénus", "Mercure", "Mars"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quelle est la force qui nous maintient au sol sur Terre ?",
+        "reponses": ["La gravité", "L'électromagnétisme", "La friction"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Combien de pattes a une araignée ?",
+        "reponses": ["6", "8", "10"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quelle est la température d'ébullition de l'eau à pression normale ?",
+        "reponses": ["50°C", "100°C", "150°C"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel est le satellite naturel de la Terre ?",
+        "reponses": ["Mars", "Jupiter", "La Lune"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quelle est l'unité de mesure de la force ?",
+        "reponses": ["Joule", "Newton", "Pascal"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quelle partie de l'œil est responsable de la perception des couleurs ?",
+        "reponses": ["La rétine", "Le cristallin", "La pupille"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Facile",
+        "question": "Quel animal est connu pour sa capacité à changer de couleur pour se camoufler ?",
+        "reponses": ["Le caméléon", "Le lézard", "La grenouille"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est l'élément chimique le plus abondant dans l'univers ?",
+        "reponses": ["Oxygène", "Hydrogène", "Carbone"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est l'organe du corps humain qui produit l'insuline ?",
+        "reponses": ["Le foie", "Le pancréas", "Le rein"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le premier homme à avoir marché sur la Lune en 1969 ?",
+        "reponses": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Comment s'appelle l'étude des champignons ?",
+        "reponses": ["L'ornithologie", "La mycologie", "L'entomologie"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est l'unité de mesure de la fréquence d'un son ?",
+        "reponses": ["Hertz", "Joule", "Newton"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Dans quelle partie de la cellule trouve-t-on l'ADN ?",
+        "reponses": ["Le cytoplasme", "Le noyau", "La membrane"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le métal le plus léger ?",
+        "reponses": ["Aluminium", "Lithium", "Magnésium"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Comment appelle-t-on un changement de l'état solide à l'état gazeux, sans passer par l'état liquide ?",
+        "reponses": ["Fusion", "Sublimation", "Condensation"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est l'unité de mesure de l'intensité du courant électrique ?",
+        "reponses": ["Volt", "Ampère", "Watt"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel phénomène naturel est mesuré par l'échelle de Richter ?",
+        "reponses": ["La température", "La magnitude des tremblements de terre", "La pression atmosphérique"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est la planète la plus chaude du système solaire ?",
+        "reponses": ["Vénus", "Mercure", "Mars"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le plus grand organe du corps humain ?",
+        "reponses": ["Le foie", "Le cœur", "La peau"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle loi de la physique stipule que la force est égale à la masse multipliée par l'accélération ?",
+        "reponses": ["La loi de la gravitation", "La deuxième loi de Newton", "La loi d'Ohm"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quelle est la vitesse de la lumière dans le vide ?",
+        "reponses": ["300 000 km/s", "150 000 km/s", "400 000 km/s"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Science",
+        "difficulte": "Difficile",
+        "question": "Quel est le plus gros os du corps humain ?",
+        "reponses": ["Humérus", "Fémur", "Tibia"],
+        "bonne_reponse": 1
+      },
+      {
+        "categorie": "Science",
+        "difficulte": "Moyen",
+        "question": "Quel est le métal liquide à température ambiante ?",
+        "reponses": ["Mercure", "Fer", "Plomb"],
+        "bonne_reponse": 0
+      }
+      
+    
+    
+    
+                     
 ]
