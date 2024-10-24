@@ -433,11 +433,11 @@ def changer_page_score(direction):
 def afficher_page_pseudo():
     global pseudo, page, cursor_visible, cursor_last_switch
     screen.blit(background_image_pseudo, (0, 0))
-    afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, WHITE)
+    afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 -125, SCREEN_HEIGHT // 2 - 50, WHITE)
     pygame.draw.rect(screen, WHITE, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
     afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, WHITE)
     
-    afficher_bouton("<-- Accueil <--", 80, 70, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
+    afficher_bouton("Accueil", 80, 70, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
     
     # Gérer le curseur clignotant
     current_time = pygame.time.get_ticks()
@@ -455,7 +455,7 @@ def afficher_page_pseudo():
 def afficher_page_difficulte():
     global page, difficulte
     screen.blit(background_image_difficulte, (0, 0))
-    afficher_texte("Choisissez la difficulté:", SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 - 100, WHITE)
+    afficher_texte("Choisissez la difficulté:", SCREEN_WIDTH // 2 - 140, SCREEN_HEIGHT // 2 - 100, WHITE)
     spacing = 20  # Espacement entre les boutons
     afficher_bouton("Facile", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Facile"))
     afficher_bouton("Moyen", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50 + 50 + spacing, 200, 50, BLUE, HOVER_COLOR, lambda: choisir_difficulte("Moyen"))
