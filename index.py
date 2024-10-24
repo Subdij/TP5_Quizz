@@ -52,7 +52,7 @@ active_field = "question"  # Champ actif pour la proposition de question
 proposition_question = {
     "question": "",
     "reponses": ["", "", "", ""],
-    "bonne_reponse": 1
+    "bonne_reponse": 3
 }
 
 
@@ -286,7 +286,7 @@ def soumettre_proposition_question():
     proposition_question = {
         "question": "",
         "reponses": ["", "", "", ""],
-        "bonne_reponse": 1
+        "bonne_reponse": 3
     }
     
     # Revenir à la page d'accueil
