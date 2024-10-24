@@ -2035,5 +2035,61 @@
         "question": "Combien de sets faut-il remporter pour gagner un match de tennis en Grand Chelem chez les hommes ?",
         "reponses": ["2", "3", "4"],
         "bonne_reponse": 1
-    }                           
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Quelle est la durée d’un match de rugby à XV ?",
+        "reponses": ["60 minutes", "80 minutes", "70 minutes"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Qui a remporté le Ballon d'Or en 2022 ?",
+        "reponses": ["Lionel Messi", "Karim Benzema", "Cristiano Ronaldo"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Difficile",
+        "question": "Quel pays a remporté le plus de titres de la Coupe du Monde de cricket ?",
+        "reponses": ["Angleterre", "Australie", "Irlande"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Quel pilote a remporté le plus de Grands Prix de Formule 1 dans sa carrière ?",
+        "reponses": ["Ayrton Senna", "Lewis Hamilton", "Michael Schumacher"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Difficile",
+        "question": "Quelle équipe a remporté la Ligue des Champions de l'UEFA en 2020-2021 ?",
+        "reponses": ["Real Madrid", "Chelsea", "Bayern Munich"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Difficile",
+        "question": "Quelle équipe a remporté la Coupe du Monde de volleyball masculin en 2018 ?",
+        "reponses": ["France", "Pologne", "Italie"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Quel pays a remporté le plus de titres de la Coupe du Monde de rugby ?",
+        "reponses": ["France", "Nouvelle-Zélande", "Angleterre"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Qui détient le record du monde du saut en longueur ?",
+        "reponses": ["Bob Beamon", "Mike Powell", "Carl Lewis"],
+        "bonne_reponse": 1
+    }                                      
 ]
