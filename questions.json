@@ -1909,5 +1909,57 @@
         "question": "Quel type de roche se forme par la consolidation de magma ?",
         "reponses": ["Roche sédimentaire", "Roche métamorphique", "Roche ignée"],
         "bonne_reponse": 2
-    }                        
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quelle est la distance d'un marathon ?",
+        "reponses": ["21 km", "42 km", "10 km"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel est le nom de l'équipe de basketball de Los Angeles célèbre pour ses maillots jaunes ?",
+        "reponses": ["Lakers", "Celtics", "Bulls"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel pays est connu pour ses performances en natation et a produit de nombreux champions olympiques ?",
+        "reponses": ["Australie", "Canada", "Japon"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel sport est associé aux termes 'touchdown' et 'field goal' ?",
+        "reponses": ["Rugby", "Football américain", "Baseball"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Dans quel sport utilise-t-on un 'putter' ?",
+        "reponses": ["Le golf", "Le hockey", "Le football"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quelle discipline olympique consiste à nager, pédaler et courir ?",
+        "reponses": ["Le triathlon", "Le pentathlon", "L'heptathlon"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Dans quel sport peut-on marquer un 'home run' ?",
+        "reponses": ["Le cricket", "Le baseball", "Le football"],
+        "bonne_reponse": 1
+    }
+    
+      
+                            
 ]
