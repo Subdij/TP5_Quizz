@@ -3,6 +3,7 @@ import pygame
 import json
 import random
 import time
+from pygame import mixer
 
 # Initialisation de Pygame
 pygame.init()
@@ -49,6 +50,7 @@ scores_per_page = 7  # Nombre de scores à afficher par page
 multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
 streak = 0  # "Compteur" de bonnes réponses d'affilée, afin d'activer des bonus de temps
+musique = 1
 active_field = "question"  # Champ actif pour la proposition de question
 
 # Proposition de question
@@ -74,6 +76,10 @@ background_image_categorie = pygame.transform.scale(background_image_categorie, 
 
 background_image_score = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+# background sound
+mixer.music.load('background.mp3')
+mixer.music.play(-1)
 
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges, streak, dernier_score_index
@@ -253,6 +259,14 @@ def render_text_wrapped(text, font, max_width):
     lines.append(' '.join(current_line))
     return lines
 
+def pause():
+        global musique
+        if musique == 1:
+            mixer.music.pause()
+            musique = 0
+        else:
+            mixer.music.unpause()
+            musique = 1
 
 # Fonction pour afficher la page d'accueil
 def afficher_page_accueil():
@@ -261,6 +275,7 @@ def afficher_page_accueil():
     afficher_texte("Bienvenue au Quiz Down!", SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, WHITE, taille=48)
     afficher_bouton("Play", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("pseudo"))
     afficher_bouton("Classement", SCREEN_WIDTH // 2 - 100, 370, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
+    afficher_bouton("mute sound", 580, 25, 200, 50, BLUE, HOVER_COLOR, lambda: pause())
     afficher_bouton("Proposer des questions", SCREEN_WIDTH // 2 - 150, 440, 300, 50, BLUE, HOVER_COLOR, lambda: changer_page("proposition_question"))
 
     pygame.display.flip()
