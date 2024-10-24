@@ -26,6 +26,8 @@ font = pygame.font.Font(None, 36)
 # Variables
 cursor_visible = True
 cursor_last_switch = 0
+cursor_switch_delay = 500  # Délai pour le clignotement du curseur
+
 quiz_termine = False
 score = 0
 temps_restant = 30
@@ -50,7 +52,7 @@ active_field = "question"  # Champ actif pour la proposition de question
 proposition_question = {
     "question": "",
     "reponses": ["", "", "", ""],
-    "bonne_reponse": 0
+    "bonne_reponse": 1
 }
 
 
@@ -140,6 +142,22 @@ def render_text_wrapped(text, font, max_width):
     lines.append(' '.join(current_line))
     return lines        
 
+def afficher_texte_avec_curseur(texte, x, y, couleur, taille, is_active, cursor_position=None):
+    font = pygame.font.Font(None, taille)
+    text_surface = font.render(texte, True, couleur)
+    screen.blit(text_surface, (x, y))
+    
+    # Si le champ est actif et que le curseur doit être visible
+    if is_active and cursor_visible:
+        # Calculer la position du curseur à la fin du texte ou à la position donnée
+        cursor_x = x + font.size(texte[:cursor_position])[0] if cursor_position is not None else x + text_surface.get_width()
+
+        # Ajuster la hauteur du curseur en fonction de la hauteur de la police
+        cursor_height = font.get_height()  # Hauteur du curseur correspondant à la hauteur du texte
+        pygame.draw.line(screen, couleur, (cursor_x, y), (cursor_x, y + cursor_height), 2)
+
+
+
 # Fonction pour afficher le texte
 def afficher_texte(texte, x, y, couleur, taille=36, max_width=None):
     font = pygame.font.Font(None, taille)
@@ -196,7 +214,7 @@ def afficher_page_accueil():
     afficher_texte("Bienvenue au Quiz Down!", SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, WHITE, taille=48)
     afficher_bouton("Play", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("pseudo"))
     afficher_bouton("Classement", SCREEN_WIDTH // 2 - 100, 370, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
-    afficher_bouton("Proposer des question", SCREEN_WIDTH // 2 - 100, 440, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("proposition_question"))
+    afficher_bouton("Proposer des question", SCREEN_WIDTH // 2 - 150, 440, 300, 50, BLUE, HOVER_COLOR, lambda: changer_page("proposition_question"))
 
     pygame.display.flip()
 
@@ -209,28 +227,34 @@ def afficher_page_proposition_question():
     # Champ pour la question
     afficher_texte("Question:", 100, 150, WHITE)
     pygame.draw.rect(screen, WHITE, (300, 150, 400, 40), 2)
-    afficher_texte(proposition_question["question"], 310, 160, WHITE)
-    
+    afficher_texte_avec_curseur(proposition_question["question"], 310, 160, WHITE, 36, active_field == "question")
+
     # Champs pour les réponses
-    for i in range(4):
+    for i in range(2):
         afficher_texte(f"Réponse {i+1}:", 100, 230 + i * 60, WHITE)
         pygame.draw.rect(screen, WHITE, (300, 230 + i * 60, 400, 40), 2)
-        # S'assurer qu'on affiche bien la réponse actuelle ou une chaîne vide par défaut
-        if proposition_question["reponses"][i] == "":
-            afficher_texte(" ", 310, 240 + i * 60, WHITE)  # Affiche un espace vide si la réponse est vide
-        else:
-            afficher_texte(proposition_question["reponses"][i], 310, 240 + i * 60, WHITE)
+        afficher_texte_avec_curseur(proposition_question["reponses"][i], 310, 240 + i * 60, WHITE, 36, active_field == i)
+
+    afficher_texte(f"Bonne réponse :", 100, 230 + 2 * 60, WHITE)
+    pygame.draw.rect(screen, WHITE, (300, 230 + 2 * 60, 400, 40), 2)
+    afficher_texte_avec_curseur(proposition_question["reponses"][2], 310, 240 + 2 * 60, WHITE, 36, active_field == 2)
 
     # Champ pour la bonne réponse
-    afficher_texte("Bonne réponse (1-4):", 100, 500, WHITE)
-    pygame.draw.rect(screen, WHITE, (300, 500, 50, 40), 2)
-    afficher_texte(str(proposition_question["bonne_reponse"] + 1), 350, 500, WHITE)
-    
+    afficher_texte("La bonne réponse est a mettre dans la dernière case", 100, 430, WHITE)
+    """pygame.draw.rect(screen, WHITE, (350, 425, 50, 40), 2)
+    afficher_texte_avec_curseur(str(proposition_question["bonne_reponse"]+ 1), 360, 435, WHITE, 36, active_field == "bonne_reponse")"""
+
     # Bouton de soumission
     afficher_bouton("Soumettre", SCREEN_WIDTH // 2 - 100, 560, 200, 50, BLUE, HOVER_COLOR, soumettre_proposition_question)
     
     afficher_bouton("<-- Accueil <--", 80, 70, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
-    
+
+    # Gérer le clignotement du curseur
+    current_time = pygame.time.get_ticks()
+    if current_time - cursor_last_switch > cursor_switch_delay:
+        cursor_visible = not cursor_visible
+        cursor_last_switch = current_time
+
     pygame.display.flip()
 
 
@@ -262,7 +286,7 @@ def soumettre_proposition_question():
     proposition_question = {
         "question": "",
         "reponses": ["", "", "", ""],
-        "bonne_reponse": 0
+        "bonne_reponse": 1
     }
     
     # Revenir à la page d'accueil
@@ -479,7 +503,7 @@ while running:
                         proposition_question["question"] = proposition_question["question"][:-1]
                     elif event.unicode:
                         proposition_question["question"] += event.unicode
-                elif active_field in range(4):  # Si on est sur une des réponses
+                elif active_field in range(3):  # Si on est sur une des réponses
                     if event.key == pygame.K_BACKSPACE:
                         proposition_question["reponses"][active_field] = proposition_question["reponses"][active_field][:-1]
                     elif event.unicode:
@@ -487,21 +511,15 @@ while running:
                 elif active_field == "bonne_reponse":
                     if event.unicode.isdigit():
                         num = int(event.unicode) - 1
-                        if 0 <= num < 4:
+                        if 0 <= num < 3:
                             proposition_question["bonne_reponse"] = num
 
-                elif active_field == "Bonne_reponse":
-                    if event.unicode.isdigit():
-                        num = int(event.unicode) - 1
-                        if 0 <= num < 4:
-                            proposition_question["bonne_reponse"] = num
-
-                # Changer de champ actif avec la touche TAB
-                if event.key == pygame.K_TAB:
+                # Changer de champ actif avec la touche Entrée
+                if event.key == pygame.K_RETURN:
                     if active_field == "question":
                         active_field = 0  # Passer au champ de la première réponse
-                    elif active_field in range(4):
-                        active_field = (active_field + 1) % 4  # Passer à la réponse suivante
+                    elif active_field in range(3):
+                        active_field = (active_field + 1) % 3  # Passer à la réponse suivante
                     elif active_field == "bonne_reponse":
                         active_field = "question"
     
