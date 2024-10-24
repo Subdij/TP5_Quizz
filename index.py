@@ -24,6 +24,9 @@ pygame.display.set_caption("QuizDown")
 font = pygame.font.Font(None, 36)
 
 # Variables
+dropdown_open = False
+difficulte_selectionnee = "Global"
+dernier_score_index = -1
 cursor_visible = True
 cursor_last_switch = 0
 cursor_switch_delay = 500  # Délai pour le clignotement du curseur
@@ -31,7 +34,7 @@ cursor_switch_delay = 500  # Délai pour le clignotement du curseur
 quiz_termine = False
 score = 0
 temps_restant = 30
-temps_global = 1000  # Temps global de 1 minute
+temps_global = 60  # Temps global de 1 minute
 question_actuelle = 0
 scores = []
 pseudo = ""
@@ -57,24 +60,25 @@ proposition_question = {
 
 
 # Charger les images de fond
-background_image_accueil = pygame.image.load(os.path.join('images', 'score.jpg'))
+background_image_accueil = pygame.image.load(os.path.join('images', 'questions.jpg'))
 background_image_accueil = pygame.transform.scale(background_image_accueil, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_pseudo = pygame.image.load(os.path.join('images', 'score.jpg'))
+background_image_pseudo = pygame.image.load(os.path.join('images', 'pseudo.jpg'))
 background_image_pseudo = pygame.transform.scale(background_image_pseudo, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_difficulte = pygame.image.load(os.path.join('images', 'score.jpg'))
+background_image_difficulte = pygame.image.load(os.path.join('images', 'difficulte.jpg'))
 background_image_difficulte = pygame.transform.scale(background_image_difficulte, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-background_image_categorie = pygame.image.load(os.path.join('images', 'score.jpg'))
+background_image_categorie = pygame.image.load(os.path.join('images', 'categorie.jpg'))
 background_image_categorie = pygame.transform.scale(background_image_categorie, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 background_image_score = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 def reinitialiser_jeu():
-    global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges
+    global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges, streak, dernier_score_index
     score = 0
+    streak = 0
     temps_restant = 30
     question_actuelle = 0
     pseudo = ""
@@ -85,6 +89,7 @@ def reinitialiser_jeu():
     indices_melanges = [random.sample(range(len(q["reponses"])), len(q["reponses"])) for q in questions]  # Mélanger les indices des réponses
     start_ticks = pygame.time.get_ticks()
     page = "pseudo"
+    dernier_score_index = -1  # Réinitialiser l'index du dernier score enregistré
 
 # Charger les questions depuis le fichier JSON
 with open('questions.json', 'r', encoding='utf-8') as f:
@@ -105,9 +110,43 @@ def charger_scores():
     except FileNotFoundError:
         return []
 
+
+def afficher_bouton_deroulant(texte, x, y, largeur, hauteur, options, couleur, hover_couleur, action=None):
+    global last_click_time, dropdown_open
+    mouse = pygame.mouse.get_pos()
+    click = pygame.mouse.get_pressed()
+    dropdown_rect = pygame.Rect(x, y, largeur, hauteur)
+    
+    if dropdown_rect.collidepoint(mouse):
+        pygame.draw.rect(screen, hover_couleur, dropdown_rect)
+        if click[0] == 1 and action is not None:
+            current_time = pygame.time.get_ticks()
+            if current_time - last_click_time > 100:
+                last_click_time = current_time
+                dropdown_open = not dropdown_open
+    else:
+        pygame.draw.rect(screen, couleur, dropdown_rect)
+    
+    afficher_texte(texte, x + (largeur // 2 - font.size(texte)[0] // 2), y + (hauteur // 2 - font.size(texte)[1] // 2), WHITE)
+    
+    if dropdown_open:
+        for i, option in enumerate(options):
+            option_rect = pygame.Rect(x, y + (i + 1) * hauteur, largeur, hauteur)
+            if option_rect.collidepoint(mouse):
+                pygame.draw.rect(screen, hover_couleur, option_rect)
+                if click[0] == 1 and action is not None:
+                    current_time = pygame.time.get_ticks()
+                    if current_time - last_click_time > 100:
+                        last_click_time = current_time
+                        action(option)
+                        dropdown_open = False
+            else:
+                pygame.draw.rect(screen, couleur, option_rect)
+            afficher_texte(option, x + (largeur // 2 - font.size(option)[0] // 2), y + (i + 1) * hauteur + (hauteur // 2 - font.size(option)[1] // 2), WHITE)
+
 # Sauvegarder les scores dans le fichier JSON
 def sauvegarder_scores():
-    global scores
+    global scores, dernier_score_index, score_page
     # Ajouter le score actuel à la liste des scores
     scores.append({
         "pseudo": pseudo,
@@ -117,9 +156,17 @@ def sauvegarder_scores():
     })
     # Trier les scores par ordre décroissant en fonction des points
     scores.sort(key=lambda x: x['score'], reverse=True)
+    # Mettre à jour l'index du dernier score enregistré
+    dernier_score_index = scores.index(next(s for s in scores if s["pseudo"] == pseudo and s["score"] == score))
+    # Calculer la page du dernier score enregistré
+    score_page = calculer_page_score(dernier_score_index)
     # Sauvegarder les scores triés dans le fichier JSON
     with open('scores.json', 'w', encoding='utf-8') as f:
         json.dump(scores, f, indent=4, ensure_ascii=False)
+    # Trier les scores immédiatement après la sauvegarde
+    trier_scores(difficulte_selectionnee)
+    # Afficher la page de score après la mise à jour
+    afficher_page_score()
 
 
 def render_text_wrapped(text, font, max_width):
@@ -317,12 +364,23 @@ def afficher_page_principale():
     page = "principale"
     screen.blit(background_image_accueil, (0, 0))
 
-#fonction pou ajouter des Questions
 
+def trier_scores(difficulte):
+    global scores, score_page, difficulte_selectionnee
+    score_page = 0
+    difficulte_selectionnee = difficulte  # Mettre à jour la difficulté sélectionnée
+    if difficulte == "Global":
+        scores = charger_scores()
+    else:
+        scores = [score for score in charger_scores() if score['difficulte'] == difficulte]
+    afficher_page_score()
+
+def calculer_page_score(index):
+    return index // scores_per_page
 
 # Fonction pour afficher la page de score
 def afficher_page_score():
-    global page, score_page
+    global page, score_page, dernier_score_index
     page = "score"
     screen.blit(background_image_score, (0, 0))
     
@@ -338,9 +396,10 @@ def afficher_page_score():
     y_offset = 200
     
     for i, score_entry in enumerate(scores[start_index:end_index], start=start_index + 1):
-        afficher_texte(f"{i}. {score_entry['pseudo']}", 80, y_offset, WHITE)
-        afficher_texte(f"{score_entry['difficulte']}", 350, y_offset, WHITE)
-        afficher_texte(f"{score_entry['score']}", 590, y_offset, WHITE)
+        couleur = BLUE if i - 1 == dernier_score_index else WHITE
+        afficher_texte(f"{i}. {score_entry['pseudo']}", 80, y_offset, couleur)
+        afficher_texte(f"{score_entry['difficulte']}", 350, y_offset, couleur)
+        afficher_texte(f"{score_entry['score']}", 590, y_offset, couleur)
         y_offset += 40
     
     if score_page > 0:
@@ -352,6 +411,9 @@ def afficher_page_score():
     afficher_bouton("Recommencer", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT - 100, 200, 50, BLUE, HOVER_COLOR, reinitialiser_jeu)
     
     afficher_bouton("Accueil", 70, 60, 230, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
+    
+    options = ["Global", "Facile", "Moyen", "Difficile"]
+    afficher_bouton_deroulant("Trier", SCREEN_WIDTH - 280, 60, 200, 50, options, BLUE, HOVER_COLOR, trier_scores)
 
 # Fonction pour changer de page
 def changer_page(nouvelle_page):
