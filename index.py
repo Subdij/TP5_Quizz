@@ -261,7 +261,7 @@ def afficher_page_accueil():
     afficher_texte("Bienvenue au Quiz Down!", SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, WHITE, taille=48)
     afficher_bouton("Play", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("pseudo"))
     afficher_bouton("Classement", SCREEN_WIDTH // 2 - 100, 370, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
-    afficher_bouton("Proposer des question", SCREEN_WIDTH // 2 - 150, 440, 300, 50, BLUE, HOVER_COLOR, lambda: changer_page("proposition_question"))
+    afficher_bouton("Proposer des questions", SCREEN_WIDTH // 2 - 150, 440, 300, 50, BLUE, HOVER_COLOR, lambda: changer_page("proposition_question"))
 
     pygame.display.flip()
 
