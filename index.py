@@ -185,6 +185,8 @@ def render_text_wrapped(text, font, max_width):
     lines.append(' '.join(current_line))
     return lines
 
+def pause():
+    mixer.music.pause()
 
 # Fonction pour afficher la page d'accueil
 def afficher_page_accueil():
@@ -193,6 +195,7 @@ def afficher_page_accueil():
     afficher_texte("Bienvenue au Quiz Down!", SCREEN_WIDTH // 2 - 200, SCREEN_HEIGHT // 2 - 100, WHITE, taille=48)
     afficher_bouton("Play", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("pseudo"))
     afficher_bouton("Classement", SCREEN_WIDTH // 2 - 100, 370, 200, 50, BLUE, HOVER_COLOR, afficher_page_score)
+    afficher_bouton("mute sound", 580, 25, 200, 50, BLUE, HOVER_COLOR, lambda: pause())
     pygame.display.flip()
 
 
@@ -269,11 +272,11 @@ def changer_page_score(direction):
 def afficher_page_pseudo():
     global pseudo, page, cursor_visible, cursor_last_switch
     screen.blit(background_image_pseudo, (0, 0))
-    afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, WHITE)
+    afficher_texte("Entrez votre pseudo:", SCREEN_WIDTH // 2 - 127, SCREEN_HEIGHT // 2 - 50, WHITE)
     pygame.draw.rect(screen, WHITE, (SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2, 200, 50), 2)
     afficher_texte(pseudo, SCREEN_WIDTH // 2 - 90, SCREEN_HEIGHT // 2 + 10, WHITE)
     
-    afficher_bouton("<-- Accueil <--", 80, 70, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
+    afficher_bouton("<-- Accueil <--", 50, 70, 200, 50, BLUE, HOVER_COLOR, lambda: changer_page("accueil"))
     
     # Gérer le curseur clignotant
     current_time = pygame.time.get_ticks()
