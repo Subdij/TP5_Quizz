@@ -1958,8 +1958,82 @@
         "question": "Dans quel sport peut-on marquer un 'home run' ?",
         "reponses": ["Le cricket", "Le baseball", "Le football"],
         "bonne_reponse": 1
-    }
-    
-      
-                            
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel est le nombre maximum de sets dans un match de tennis masculin en Grand Chelem ?",
+        "reponses": ["3", "4", "5"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel athlète détient le record du monde du 100 mètres en athlétisme ?",
+        "reponses": ["Usain Bolt", "Carl Lewis", "Michael Johnson"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel sport est associé à la Coupe Stanley ?",
+        "reponses": ["Le basketball", "Le baseball", "Le hockey sur glace"],
+        "bonne_reponse": 2
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Dans quel sport peut-on réaliser un 'coup de chapeau' (hat-trick) ?",
+        "reponses": ["Le tennis", "Le football", "Le basket-ball"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Combien de trous y a-t-il dans un parcours de golf standard ?",
+        "reponses": ["9", "18", "21"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Dans quel sport peut-on marquer un essai ?",
+        "reponses": ["Le rugby", "Le tennis", "Le golf"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel est le tournoi de tennis joué sur terre battue ?",
+        "reponses": ["Wimbledon", "Roland-Garros", "L'US Open"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Quel sport est pratiqué par Serena Williams ?",
+        "reponses": ["Le tennis", "Le golf", "Le volley-ball"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Quel joueur de tennis est connu pour avoir remporté 20 titres du Grand Chelem ?",
+        "reponses": ["Roger Federer", "Rafael Nadal", "Novak Djokovic"],
+        "bonne_reponse": 0
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Moyen",
+        "question": "Quel pays a accueilli les Jeux Olympiques d'été en 2016 ?",
+        "reponses": ["Chine", "Brésil", "Japon"],
+        "bonne_reponse": 1
+    },
+    {
+        "categorie": "Sport",
+        "difficulte": "Facile",
+        "question": "Combien de sets faut-il remporter pour gagner un match de tennis en Grand Chelem chez les hommes ?",
+        "reponses": ["2", "3", "4"],
+        "bonne_reponse": 1
+    }                           
 ]
