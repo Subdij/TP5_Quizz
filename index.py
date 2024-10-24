@@ -45,6 +45,7 @@ scores_per_page = 7  # Nombre de scores à afficher par page
 multiplicateur = 1  # Multiplicateur de points basé sur la difficulté
 temps_question = 10  # Temps restant pour chaque question
 streak = 0  # "Compteur" de bonnes réponses d'affilée, afin d'activer des bonus de temps
+musique = 1
 
 # Charger les images de fond
 background_image_accueil = pygame.image.load(os.path.join('images', 'questions.jpg'))
@@ -186,7 +187,13 @@ def render_text_wrapped(text, font, max_width):
     return lines
 
 def pause():
-    mixer.music.pause()
+        global musique
+        if musique == 1:
+            mixer.music.pause()
+            musique = 0
+        else:
+            mixer.music.unpause()
+            musique = 1
 
 # Fonction pour afficher la page d'accueil
 def afficher_page_accueil():
