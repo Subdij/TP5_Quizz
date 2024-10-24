@@ -24,7 +24,7 @@ Le quiz est à présent démarré et vous pouvez accéder à la fenêtre qui app
 > ### Liste des fonctionnalités avancées / idées :
 > - Ajouter un bouton pour le classement sur l'écran d'accueil. ✅
 > - Mettre en évidence le score du joueur sur le tableau de fin et afficher son pseudo de manière évidente.✅
-> - Ajouter une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.❌
+> - Ajouter une fonctionnalité pour que le joueur puisse ajouter des questions lui-même.✅
 > - Ajouter des sons. ❌
 > - Ajouter des niveaux de difficulté.✅
 > - Randomiser les questions et les réponses.✅
