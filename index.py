@@ -3,6 +3,7 @@ import pygame
 import json
 import random
 import time
+from pygame import mixer
 
 # Initialisation de Pygame
 pygame.init()
@@ -60,6 +61,10 @@ background_image_categorie = pygame.transform.scale(background_image_categorie, 
 
 background_image_score = pygame.image.load(os.path.join('images', 'score.jpg'))
 background_image_score = pygame.transform.scale(background_image_score, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+# background sound
+mixer.music.load('background.mp3')
+mixer.music.play(-1)
 
 def reinitialiser_jeu():
     global score, temps_restant, question_actuelle, pseudo, difficulte, categorie, questions, start_ticks, page, indices_melanges, streak
